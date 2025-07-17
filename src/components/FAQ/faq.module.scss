@@ -1,8 +1,5 @@
-@use '../../styles/_var' as var;
+@use "../../styles/_var" as var;
 
-.faq {
-  display: none;
-}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -54,12 +51,12 @@
   cursor: pointer;
   transition: all 0.8s ease;
   background-color: var.$main-green;
-  background-image: url('/images/faq/plus.png');
+  background-image: url("/images/faq/plus.png");
   background-position: center;
   background-repeat: no-repeat;
 
   &:has(input:checked) {
-    background-image: url('/images/faq/minus.svg');
+    background-image: url("/images/faq/minus.svg");
   }
 
   &:hover {
@@ -152,9 +149,9 @@
     width: 48px;
     height: 32px;
     border-radius: 20px;
-    background-image: url('/images/faq/plus_m.png');
+    background-image: url("/images/faq/plus_m.png");
     &:has(input:checked) {
-      background-image: url('/images/faq/minus_m.svg');
+      background-image: url("/images/faq/minus_m.svg");
     }
   }
 }

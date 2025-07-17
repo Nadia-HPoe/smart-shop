@@ -1,7 +1,7 @@
-import FAQ from '@/components/FAQ/FAQ';
-import styles from './page.module.scss';
-import Header from '@/components/Header/Header';
-import Story from '@/components/OurStory/Story';
+import styles from "./page.module.scss";
+import Header from "@/components/Header/Header";
+import FAQ from "@/components/FAQ/FAQ";
+import Story from "@/components/OurStory/Story";
 
 export default function Home() {
   return (

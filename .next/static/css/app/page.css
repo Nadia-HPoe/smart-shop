@@ -1,0 +1,407 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/app/page.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_main__akH3E {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1919px) {
+  .page_main__akH3E {
+    width: 1440px;
+  }
+}
+@media (max-width: 1439px) {
+  .page_main__akH3E {
+    width: 1100px;
+  }
+}
+@media (max-width: 1099px) {
+  .page_main__akH3E {
+    width: 744px;
+  }
+}
+@media (max-width: 743px) {
+  .page_main__akH3E {
+    width: 390px;
+  }
+}
+@media (max-width: 389px) {
+  .page_main__akH3E {
+    width: 350px;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/Header/header.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.header_header__P90l2 {
+  font-family: "Raleway", "Montserrat", Arial, Helvetica, sans-serif;
+  color: #20221b;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/Title/title.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.title_wrapper__9WT8E {
+  max-width: 800px;
+  margin-top: 160px;
+  padding: 46px 0 46px 140px;
+  background-color: #a6c63d;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.title_title__r6Mq6 {
+  font-family: "Raleway", "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (max-width: 1439px) {
+  .title_wrapper__9WT8E {
+    margin-top: 100px;
+    max-width: 500px;
+    padding: 40px 0 40px 80px;
+  }
+  .title_title__r6Mq6 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 1099px) {
+  .title_wrapper__9WT8E {
+    max-width: 362px;
+    padding: 36px 0 36px 50px;
+  }
+  .title_title__r6Mq6 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 743px) {
+  .title_wrapper__9WT8E {
+    margin-top: 70px;
+    max-width: 240px;
+    padding: 25px 0 25px 20px;
+  }
+  .title_title__r6Mq6 {
+    font-size: 18px;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/FAQ/faq.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.faq_wrapper__KQWFp {
+  display: flex;
+  flex-direction: column;
+  padding: 140px;
+  gap: 20px;
+}
+
+.faq_question__nBwoj {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 31px 40px;
+  border: 1px solid #f069a3;
+  border-radius: 8px;
+  background-color: #fff8fb;
+}
+.faq_question__nBwoj:has(input:checked) {
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+
+.faq_question__nBwoj > .faq_text__X9NAl {
+  display: none;
+}
+.faq_question__nBwoj:has(input:checked) > .faq_text__X9NAl {
+  display: block;
+}
+
+.faq_text_and_button__Vhgif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  font-family: "Raleway", "Montserrat", Arial, Helvetica, sans-serif;
+  color: #20221b;
+}
+
+.faq_button__mv9rI {
+  width: 58px;
+  height: 58px;
+  border-radius: 44px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  background-color: #a6c63d;
+  background-image: url("/images/faq/plus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.faq_button__mv9rI:has(input:checked) {
+  background-image: url("/images/faq/minus.svg");
+}
+.faq_button__mv9rI:hover {
+  background-color: #dbe8b1;
+}
+
+.faq_button__mv9rI input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.faq_question_text__FG5Z5 {
+  padding-right: 11px;
+}
+
+.faq_question__nBwoj:has(input:checked) .faq_answer_text__ln_I8 {
+  opacity: 1;
+}
+
+.faq_answer_text__ln_I8 {
+  display: inline;
+  font-family: "Raleway", "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  padding-top: 30px;
+  padding-right: 150px;
+  opacity: 0;
+  animation: faq_fade-in__0Wwsf 0.9s ease-in-out forwards;
+}
+
+@keyframes faq_fade-in__0Wwsf {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 1439px) {
+  .faq_wrapper__KQWFp {
+    padding: 100px;
+  }
+  .faq_text_and_button__Vhgif {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .faq_answer_text__ln_I8 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1099px) {
+  .faq_wrapper__KQWFp {
+    padding: 60px 50px 0;
+  }
+  .faq_text_and_button__Vhgif {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .faq_answer_text__ln_I8 {
+    padding-right: 100px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 743px) {
+  .faq_wrapper__KQWFp {
+    padding: 50px 20px 0;
+    gap: 16px;
+  }
+  .faq_question__nBwoj {
+    padding: 16px 20px;
+  }
+  .faq_text_and_button__Vhgif {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .faq_answer_text__ln_I8 {
+    padding-right: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .faq_button__mv9rI {
+    width: 48px;
+    height: 32px;
+    border-radius: 20px;
+    background-image: url("/images/faq/plus_m.png");
+  }
+  .faq_button__mv9rI:has(input:checked) {
+    background-image: url("/images/faq/minus_m.svg");
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[7].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[7].use[5]!./src/components/OurStory/story.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.story_ourstory__S8Xp4 {
+  font-family: "Raleway", "Montserrat", Arial, Helvetica, sans-serif;
+  color: #20221b;
+}
+
+.story_content__sYWzW {
+  padding-top: 30px;
+}
+
+.story_content_wrapper__oIaUO {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 140px;
+  gap: 40px;
+}
+
+.story_content_wrapper_reverse__8uaff {
+  flex-direction: row-reverse;
+}
+
+.story_content_wrapper_text__k1FqU {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.story_content_wrapper_images__vXhtj {
+  display: flex;
+  align-items: end;
+  column-gap: 30px;
+}
+
+.story_content_wrapper_images_reverse__oteEe {
+  flex-direction: row-reverse;
+}
+
+.story_year__2m1XW {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.story_text__serl9 {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 140%;
+}
+.story_text__serl9 > a {
+  text-decoration: none;
+  color: #20221b;
+  font-weight: 600;
+  transition: all 0.7s ease;
+}
+.story_text__serl9 > a:hover {
+  color: #a6c63d;
+}
+
+.story_line__5evke {
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 15%, rgb(235, 109, 18) 50%, rgb(255, 255, 255) 85%, rgb(255, 255, 255) 100%);
+  height: 3px;
+  border: 0;
+}
+
+@media (max-width: 1439px) {
+  .story_content_wrapper__oIaUO {
+    padding: 50px 100px;
+  }
+  .story_year__2m1XW {
+    font-size: 38px;
+    line-height: 140%;
+  }
+  .story_text__serl9 {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+@media (max-width: 1099px) {
+  .story_content_wrapper__oIaUO {
+    flex-direction: column;
+  }
+}
+@media (max-width: 743px) {
+  .story_content__sYWzW {
+    padding-top: 20px;
+  }
+  .story_content_wrapper__oIaUO {
+    align-items: center;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  .story_content_wrapper_images__vXhtj {
+    column-gap: 16px;
+  }
+  .story_year__2m1XW {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .story_text__serl9 {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .story_image__M4CFr {
+    width: 268px;
+    height: 198px;
+  }
+}
