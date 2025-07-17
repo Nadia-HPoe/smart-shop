@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src:
+    // url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+    // url('/fonts/Montserrat-Regular.woff') format('woff'),
+    url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+//////////////colors//////////////
+$black: #20221b;
+$white: #ffffff;
+$main-green: #a6c63d;
+$button-green: #b3de2e;
+$b-green: #25b918;
+$l-green: #dbe8b1;
+$l-pink: #fff8fb;
+$hover-pink: #ffdfed;
+$pink: #f069a3;
+$red: #bc0051;
+
+//////////////fonts//////////////
+$raleway: 'Raleway', 'Montserrat', Arial, Helvetica, sans-serif;
+$inter: 'Inter', Arial, Helvetica, sans-serif;

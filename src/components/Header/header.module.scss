@@ -1,0 +1,6 @@
+@use '../../styles/_var' as var;
+
+.header {
+  font-family: var.$raleway;
+  color: var.$black;
+}
