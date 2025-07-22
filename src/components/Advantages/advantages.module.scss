@@ -1,0 +1,104 @@
+@use '../../styles/_var' as var;
+
+.cards {
+  padding: 140px 140px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  font-family: var.$raleway;
+  color: var.$black;
+}
+.card {
+  border: 1px solid var.$pink;
+  border-radius: 8px;
+  background-color: var.$l-pink;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.subtitle {
+  white-space: pre-line;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+}
+.text {
+  white-space: pre-line;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 1919px) {
+  .card {
+    padding: 20px 20px;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
+  .text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .cards {
+    padding: 100px 100px;
+  }
+  .card {
+    padding: 20px 9px;
+  }
+  .subtitle {
+    font-size: 22px;
+    line-height: 150%;
+  }
+  .text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 1099px) {
+  .cards {
+    padding: 60px 107px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    gap: 16px;
+    padding: 20px 24px;
+  }
+  .subtitle {
+    white-space: normal;
+  }
+  .text {
+    white-space: normal;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 743px) {
+  .cards {
+    padding: 50px 34px 0px;
+  }
+  .card {
+    padding: 16px 20px;
+  }
+  .icon {
+    width: 68px;
+    height: 68px;
+  }
+  .subtitle {
+    white-space: pre-line;
+    font-size: 18px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}

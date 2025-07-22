@@ -1,0 +1,147 @@
+export const columns = [
+  { header: 'Company/ Product', accessor: 'name' },
+  { header: 'Increase in \nTurnover', accessor: 'turnover' },
+  { header: 'Increase in Profit', accessor: 'profit' },
+  { header: 'Increase in Traffic', accessor: 'traffic' },
+  { header: 'Cost of Services', accessor: 'cost' },
+  { header: 'Implementation \nTime (1 stage)', accessor: 'time' },
+  { header: 'CAC', accessor: 'cac' },
+  { header: 'Environmental \nImpact', accessor: 'impact' },
+  { header: 'Total Score', accessor: 'total' },
+];
+
+export interface Product {
+  id: number;
+  name: string;
+  turnover: string;
+  profit: string;
+  traffic: string;
+  cost: string;
+  time: string;
+  cac: string;
+  impact: string;
+  total: number;
+}
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: 'Payback(Germany)',
+    turnover: '15-25% (Medium)',
+    profit: '10-20% (Medium)',
+    traffic: '5-15% (Low)',
+    cost: '€€ (Medium)',
+    time: '2-3 months',
+    cac: '€ (Low)',
+    impact: 'Neutral',
+    total: 2,
+  },
+  {
+    id: 2,
+    name: 'Idealo',
+    turnover: '10-20% (Medium)',
+    profit: '5-15% (Low)',
+    traffic: '5-15% (Low)',
+    cost: '€ (Low)',
+    time: '1-2 months',
+    cac: '€ (Low)',
+    impact: 'Neutral',
+    total: 2,
+  },
+  {
+    id: 3,
+    name: 'Ströer',
+    turnover: '20-30% (High)',
+    profit: '15-25% (Medium)',
+    traffic: '20-30% (High)',
+    cost: '€€€ (High)',
+    time: '1-2 months',
+    cac: '€€ (Medium)',
+    impact: 'Neutral',
+    total: 2,
+  },
+  {
+    id: 4,
+    name: 'ElandersGermany',
+    turnover: '10-20% (Medium)',
+    profit: '5-15% (Low)',
+    traffic: '5-15% (Low)',
+    cost: '€€ (Medium)',
+    time: '1 month',
+    cac: '€€ (Medium)',
+    impact: 'Negative (Paper Use)',
+    total: 0,
+  },
+  {
+    id: 5,
+    name: 'SAP',
+    turnover: '20-30% (High)',
+    profit: '10-20% (Medium)',
+    traffic: '10-20% (Medium)',
+    cost: '€€€ (High)',
+    time: '3-6 months',
+    cac: '€€€ (High)',
+    impact: 'Neutral',
+    total: 2,
+  },
+  {
+    id: 6,
+    name: 'Ceneo',
+    turnover: '10-20% (Medium)',
+    profit: '5-15% (Low)',
+    traffic: '5-15% (Low)',
+    cost: '€ (Low)',
+    time: '1-2 months',
+    cac: '€ (Low)',
+    impact: 'Neutral',
+    total: 2,
+  },
+  {
+    id: 7,
+    name: 'AMS',
+    turnover: '20-30% (High)',
+    profit: '15-25% (Medium)',
+    traffic: '20-30% (High)',
+    cost: '€€€ (High)',
+    time: '1-2 months',
+    cac: '€€ (Medium)',
+    impact: 'Neutral',
+    total: 2,
+  },
+  {
+    id: 8,
+    name: 'DrukarniaChroma',
+    turnover: '10-20% (Medium)',
+    profit: '5-15% (Low)',
+    traffic: '5-15% (Low)',
+    cost: '€€ (Medium)',
+    time: '1 month',
+    cac: '€€ (Medium)',
+    impact: 'Negative (Paper Use)',
+    total: 0,
+  },
+  {
+    id: 9,
+    name: 'Comarch',
+    turnover: '20-30% (High)',
+    profit: '10-20% (Medium)',
+    traffic: '10-20% (Medium)',
+    cost: '€€€ (High)',
+    time: '3-6 months',
+    cac: '€€€ (High)',
+    impact: 'Neutral',
+    total: 2,
+  },
+  {
+    id: 10,
+    name: 'UNCO Smart Shop',
+    turnover: '20-30% (High)',
+    profit: '10-20% (Medium)',
+    traffic: '10-20% (Medium)',
+    cost: '€ (Low)',
+    time: '1 week',
+    cac: '€ (Low)',
+    impact: 'Positive (Food Waste Reduction)',
+    total: 6,
+  },
+];

@@ -1,0 +1,117 @@
+@use '../../styles/_var' as var;
+.banner2 {
+  font-family: var.$raleway;
+  color: var.$black;
+}
+.wrapper {
+  padding: 80px 140px 31px;
+  font-weight: 500;
+}
+.texts {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+.text {
+  width: 40%;
+  font-size: 40px;
+  line-height: 47px;
+}
+.list {
+  font-size: 32px;
+  line-height: 38px;
+}
+.list_item {
+  padding-left: 20px;
+  list-style: disc inside;
+  color: var.$red;
+  & > span {
+    color: var.$b-green;
+  }
+}
+.links {
+  font-size: 16px;
+  line-height: 130%;
+}
+.link_text {
+  color: #989898;
+}
+.link {
+  text-decoration: none;
+  color: #0f4e2a;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1919px) {
+  .text {
+    width: 47%;
+    font-size: 36px;
+  }
+  .list {
+    font-size: 28px;
+  }
+  .image {
+    width: 1440px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1439px) {
+  .wrapper {
+    padding: 80px 100px 31px;
+  }
+  .text {
+    font-size: 26px;
+  }
+  .list {
+    font-size: 20px;
+  }
+  .links {
+    font-size: 14px;
+  }
+  .image {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .wrapper {
+    padding: 60px 50px 45px;
+  }
+  .texts {
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 24px;
+  }
+  .text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .image {
+    width: 744px;
+  }
+}
+
+@media (max-width: 743px) {
+  .wrapper {
+    padding: 50px 20px 20px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .list {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .links {
+    font-size: 10px;
+  }
+  .image {
+    width: 390px;
+  }
+}
