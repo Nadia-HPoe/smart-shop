@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import { useRef, useState } from 'react';
-import Title from '../Title/Title';
-import styles from './news.module.scss';
-import NewsCard from './NewsCard/NewsCard';
-import Image from 'next/image';
+import { useRef } from "react";
+import Title from "../Title/Title";
+import styles from "./news.module.scss";
+import NewsCard from "./NewsCard/NewsCard";
+import Image from "next/image";
 
 const News: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
 
-  const handleScroll = (direction: 'left' | 'right') => {
+  const handleScroll = (direction: "left" | "right") => {
     const slider = sliderRef.current;
     if (slider) {
       const scrollAmount = slider.offsetWidth / 2;
       slider.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth',
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
       });
     }
   };
@@ -33,13 +33,27 @@ const News: React.FC = () => {
         <div className={styles.buttons}>
           <button
             className={styles.button}
-            onClick={() => handleScroll('left')}
+            onClick={() => handleScroll("left")}
             aria-label='Previous'
           >
-            <Image src='/images/arrow-left.png' alt='arrow' width={48} height={48} />
+            <Image
+              src='/images/arrow-left.png'
+              alt='arrow'
+              width={48}
+              height={48}
+            />
           </button>
-          <button className={styles.button} onClick={() => handleScroll('right')} aria-label='Next'>
-            <Image src='/images/arrow-right.png' alt='arrow' width={48} height={48} />
+          <button
+            className={styles.button}
+            onClick={() => handleScroll("right")}
+            aria-label='Next'
+          >
+            <Image
+              src='/images/arrow-right.png'
+              alt='arrow'
+              width={48}
+              height={48}
+            />
           </button>
         </div>
       </div>
