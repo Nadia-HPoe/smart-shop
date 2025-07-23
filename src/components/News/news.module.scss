@@ -1,0 +1,68 @@
+@use '../../styles/_var' as var;
+
+.slider {
+  padding: 80px 140px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  align-items: stretch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.buttons {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 1439px) {
+  .slider {
+    padding: 60px 100px 0;
+  }
+}
+
+@media (max-width: 1099px) {
+  .slider {
+    padding: 60px 50px 0;
+  }
+}
+
+@media (max-width: 743px) {
+  .slider {
+    padding: 50px 9px 0;
+  }
+  .cards {
+    gap: 12px;
+  }
+  .buttons {
+    padding-top: 30px;
+    gap: 80px;
+  }
+}
