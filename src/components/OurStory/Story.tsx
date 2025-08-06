@@ -9,7 +9,7 @@ const Story = () => {
   const getSearchLinks = useSearchLinks;
 
   return (
-    <section className={styles.ourstory}>
+    <section className={styles.ourstory} id='story'>
       <Title title='Our Story' />
 
       {storyItems.map((item, index) => (

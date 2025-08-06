@@ -1,30 +1,21 @@
-"use client";
+'use client';
 
-import { useRef } from "react";
-import Title from "../Title/Title";
-import styles from "./news.module.scss";
-import NewsCard from "./NewsCard/NewsCard";
-import Image from "next/image";
+import { useRef } from 'react';
+import Title from '../Title/Title';
+import styles from './news.module.scss';
+import NewsCard from './NewsCard/NewsCard';
+import Image from 'next/image';
+import { useScrolling } from '@/hooks/useScrolling';
 
 const News: React.FC = () => {
-  const sliderRef = useRef<HTMLDivElement>(null);
-
-  const handleScroll = (direction: "left" | "right") => {
-    const slider = sliderRef.current;
-    if (slider) {
-      const scrollAmount = slider.offsetWidth / 2;
-      slider.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
+  const { canScrollLeft, canScrollRight, scrollLeft, scrollRight, scrollContainerRef } =
+    useScrolling(300);
 
   return (
     <section id='news'>
       <Title title='news' />
       <div className={styles.slider}>
-        <div className={styles.cards} ref={sliderRef}>
+        <div className={styles.cards} ref={scrollContainerRef}>
           <NewsCard />
           <NewsCard />
           <NewsCard />
@@ -33,27 +24,19 @@ const News: React.FC = () => {
         <div className={styles.buttons}>
           <button
             className={styles.button}
-            onClick={() => handleScroll("left")}
+            onClick={scrollLeft}
+            disabled={!canScrollLeft}
             aria-label='Previous'
           >
-            <Image
-              src='/images/arrow-left.png'
-              alt='arrow'
-              width={48}
-              height={48}
-            />
+            <Image src='/images/arrow-left.png' alt='arrow' width={48} height={48} />
           </button>
           <button
             className={styles.button}
-            onClick={() => handleScroll("right")}
+            onClick={scrollRight}
+            disabled={!canScrollRight}
             aria-label='Next'
           >
-            <Image
-              src='/images/arrow-right.png'
-              alt='arrow'
-              width={48}
-              height={48}
-            />
+            <Image src='/images/arrow-right.png' alt='arrow' width={48} height={48} />
           </button>
         </div>
       </div>

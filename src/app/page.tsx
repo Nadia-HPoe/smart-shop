@@ -6,18 +6,29 @@ import Advantages from '@/components/Advantages/Advantages';
 import Banner2 from '@/components/Banner2/Banner2';
 import Competitors from '@/components/Competitors/Competitors';
 import News from '@/components/News/News';
+import ToolsSlide from '@/components/ToolsSlide/ToolsSlide';
+import Banner from '@/components/Banner/Banner';
+
+import ContactUs from '@/components/ContactUs/ContactUs';
+import Footer from '@/components/Footer/Footer';
+import Profit from '@/components/Profit/Profit';
 
 export default function Home() {
   return (
     <>
       <div className={styles.main}>
         <Header />
+        <Banner />
+        <ToolsSlide />
+        <Profit />
         <Competitors />
         <Banner2 />
         <FAQ />
         <Advantages />
         <Story />
         <News />
+        <ContactUs />
+        <Footer />
       </div>
     </>
   );

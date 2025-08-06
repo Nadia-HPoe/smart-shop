@@ -3,4 +3,220 @@
 .header {
   font-family: var.$raleway;
   color: var.$black;
+  padding: 30px 140px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .headerLogo {
+    margin-bottom: 20px;
+  }
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+  }
+
+  .headerNav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: var.$black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: 3px underline var.$main-green;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  .headerActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    .headerBtn {
+      font-family: var.$raleway;
+      font-size: 18px;
+      font-weight: 700;
+      color: var.$black;
+      padding: 19.5px 57.5px;
+      border: 2px solid var.$pink;
+      border-radius: 52px;
+      background-color: var.$l-pink;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        background-color: var.$hover-pink;
+      }
+    }
+    .burgerNavButton {
+      display: none;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+    }
+  }
+
+  .modalWindow {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: var.$white;
+    z-index: 10;
+    .closeModal {
+      position: absolute;
+      top: 40px;
+      right: 46px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+    .modalNav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 60px;
+      li {
+        list-style: none;
+        font-size: 24px;
+        font-weight: 600;
+        a {
+          color: var.$black;
+          text-decoration: none;
+          &:hover {
+            text-decoration: 3px underline var.$main-green;
+            text-underline-offset: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1919px) {
+  .header {
+    padding: 30px 100px 100px;
+    .headerActions button {
+      padding: 19.5px 30px;
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .header {
+    padding: 30px 60px 40px;
+    .headerContainer {
+      gap: 80px;
+    }
+    .headerNav {
+      gap: 30px;
+      font-size: 20px;
+      line-height: 100%;
+      a:hover {
+        text-underline-offset: 6px;
+      }
+    }
+    .headerActions .headerBtn {
+      font-weight: 600;
+      font-size: 16px;
+      padding: 19.5px 20px;
+    }
+  }
+}
+
+@media (max-width: 1099px) {
+  .header {
+    padding: 30px 40px 60px;
+    .headerContainer {
+      gap: 60px;
+    }
+    .headerNav {
+      display: none;
+    }
+    .headerActions .headerBtn {
+      font-size: 14px;
+    }
+    .modalWindow {
+      display: block;
+    }
+    .headerActions {
+      .headerBtn {
+        font-size: 12px;
+        padding: 13px 35px;
+      }
+      .burgerNavButton {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 743px) {
+  .header {
+    padding: 20px 20px 40px;
+    gap: 30px;
+    .headerLogo {
+      margin-bottom: 18px;
+      width: 100px;
+      height: 46px;
+    }
+    .headerActions {
+      gap: 16px;
+      .headerBtn {
+        font-size: 10px;
+        padding: 10px 21.5px;
+      }
+    }
+    .modalWindow .modalNav li {
+      font-size: 20px;
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 389px) {
+  .header {
+    padding: 20px 10px 40px;
+    .headerActions {
+      gap: 12px;
+      .headerBtn {
+        font-size: 9.5px;
+        padding: 8px 16px;
+      }
+    }
+    .modalWindow {
+      .closeModal {
+        top: 30px;
+        right: 30px;
+      }
+      .modalNav {
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }

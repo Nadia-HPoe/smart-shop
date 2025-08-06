@@ -12,6 +12,7 @@ export const columns = [
 
 export interface Product {
   id: number;
+  img: string;
   name: string;
   turnover: string;
   profit: string;
@@ -26,7 +27,8 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 1,
-    name: 'Payback(Germany)',
+    img: '/images/competitors/1.png',
+    name: '',
     turnover: '15-25% (Medium)',
     profit: '10-20% (Medium)',
     traffic: '5-15% (Low)',
@@ -38,7 +40,8 @@ export const products: Product[] = [
   },
   {
     id: 2,
-    name: 'Idealo',
+    img: '/images/competitors/2.png',
+    name: '',
     turnover: '10-20% (Medium)',
     profit: '5-15% (Low)',
     traffic: '5-15% (Low)',
@@ -50,7 +53,8 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    name: 'Ströer',
+    img: '/images/competitors/3.png',
+    name: '',
     turnover: '20-30% (High)',
     profit: '15-25% (Medium)',
     traffic: '20-30% (High)',
@@ -58,11 +62,12 @@ export const products: Product[] = [
     time: '1-2 months',
     cac: '€€ (Medium)',
     impact: 'Neutral',
-    total: 2,
+    total: 3,
   },
   {
     id: 4,
-    name: 'ElandersGermany',
+    img: '/images/competitors/4.png',
+    name: '',
     turnover: '10-20% (Medium)',
     profit: '5-15% (Low)',
     traffic: '5-15% (Low)',
@@ -74,7 +79,8 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    name: 'SAP',
+    img: '/images/competitors/5.png',
+    name: '',
     turnover: '20-30% (High)',
     profit: '10-20% (Medium)',
     traffic: '10-20% (Medium)',
@@ -86,7 +92,8 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: 'Ceneo',
+    img: '/images/competitors/6.png',
+    name: '',
     turnover: '10-20% (Medium)',
     profit: '5-15% (Low)',
     traffic: '5-15% (Low)',
@@ -98,7 +105,8 @@ export const products: Product[] = [
   },
   {
     id: 7,
-    name: 'AMS',
+    img: '/images/competitors/7.png',
+    name: '',
     turnover: '20-30% (High)',
     profit: '15-25% (Medium)',
     traffic: '20-30% (High)',
@@ -106,11 +114,12 @@ export const products: Product[] = [
     time: '1-2 months',
     cac: '€€ (Medium)',
     impact: 'Neutral',
-    total: 2,
+    total: 3,
   },
   {
     id: 8,
-    name: 'DrukarniaChroma',
+    img: '/images/competitors/8.png',
+    name: '',
     turnover: '10-20% (Medium)',
     profit: '5-15% (Low)',
     traffic: '5-15% (Low)',
@@ -122,7 +131,8 @@ export const products: Product[] = [
   },
   {
     id: 9,
-    name: 'Comarch',
+    img: '/images/competitors/9.png',
+    name: '',
     turnover: '20-30% (High)',
     profit: '10-20% (Medium)',
     traffic: '10-20% (Medium)',
@@ -134,7 +144,8 @@ export const products: Product[] = [
   },
   {
     id: 10,
-    name: 'UNCO Smart Shop',
+    img: '/images/competitors/Unco.png',
+    name: 'Smart Shop',
     turnover: '20-30% (High)',
     profit: '10-20% (Medium)',
     traffic: '10-20% (Medium)',

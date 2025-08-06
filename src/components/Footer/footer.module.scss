@@ -1,0 +1,162 @@
+@use '../../styles/_var' as var;
+
+.footer {
+  margin-top: 160px;
+  padding: 80px 140px;
+  font-family: var.$raleway;
+  color: var.$black;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.footer_nav {
+  display: flex;
+  gap: 80px;
+}
+.footer_nav_item,
+.link_item {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  text-decoration: none;
+  color: var.$black;
+  &:hover {
+    text-decoration: 3px underline var.$main-green;
+    text-underline-offset: 4px;
+  }
+}
+.contacts {
+  padding: 52px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social_title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+}
+.social_items {
+  display: flex;
+  gap: 20px;
+}
+.mail {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+.mail_link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: var.$black;
+  transition: all 0.7s ease;
+  &:hover {
+    color: var.$main-green;
+  }
+}
+.links {
+  display: flex;
+  gap: 60px;
+}
+.line {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(235, 109, 18, 1) 50%,
+    rgba(255, 255, 255, 1) 90%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  height: 3px;
+  border: 0;
+}
+.footer_text_item {
+  padding-top: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@media (max-width: 1919px) {
+  .contacts {
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+  }
+  .links {
+    align-self: end;
+  }
+}
+
+@media (max-width: 1439px) {
+  .footer {
+    padding: 100px;
+  }
+  .footer_nav {
+    gap: 40px;
+  }
+  .footer_nav_item {
+    font-size: 20px;
+  }
+  .links {
+    gap: 50px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1099px) {
+  .footer {
+    margin-top: 50px;
+    padding: 50px;
+  }
+  .footer_nav {
+    gap: 24px;
+  }
+  .footer_nav_item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 743px) {
+  .footer {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .footer_nav {
+    padding: 0 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .social_title {
+    font-size: 22px;
+  }
+  .social_icon {
+    width: 40px;
+    height: 40px;
+  }
+  .link_item {
+    font-size: 16px;
+  }
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_text_item {
+    font-size: 14px;
+  }
+}

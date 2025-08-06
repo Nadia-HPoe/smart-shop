@@ -1,53 +1,18 @@
 'use client';
 
-import { useRef, useState, useEffect } from 'react';
 import Title from '../Title/Title';
 import styles from './competitors.module.scss';
 import { columns, products, Product } from '@/constants/GetCompetitorsData';
 import { getCellStyle } from '@/functions/formatCellCompetitors';
+import { useScrolling } from '@/hooks/useScrolling';
 import Image from 'next/image';
 
 function Competitors() {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const scrollByAmount = 300;
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const scrollLeft = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: -scrollByAmount, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({ left: scrollByAmount, behavior: 'smooth' });
-    }
-  };
-  const checkScrollPosition = () => {
-    const container = scrollContainerRef.current;
-    if (!container) return;
-
-    const scrollLeft = container.scrollLeft;
-    const maxScrollLeft = container.scrollWidth - container.clientWidth;
-
-    setCanScrollLeft(scrollLeft > 0);
-    setCanScrollRight(scrollLeft < maxScrollLeft);
-  };
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container) return;
-
-    checkScrollPosition();
-
-    container.addEventListener('scroll', checkScrollPosition);
-    return () => {
-      container.removeEventListener('scroll', checkScrollPosition);
-    };
-  }, []);
+  const { canScrollLeft, canScrollRight, scrollLeft, scrollRight, scrollContainerRef } =
+    useScrolling(300);
 
   return (
-    <section className={styles.competitors}>
+    <section className={styles.competitors} id='competitors'>
       <Title title='competitors' />
       <div className={styles.container} ref={scrollContainerRef}>
         <table className={styles.table}>
@@ -68,10 +33,27 @@ function Competitors() {
                     className={styles.table_row}
                     style={getCellStyle(
                       column.accessor as keyof Product,
-                      product[column.accessor as keyof Product].toString()
+                      String(product[column.accessor as keyof Product]),
+                      product
                     )}
                   >
-                    {product[column.accessor as keyof Product]}
+                    {' '}
+                    {column.accessor === 'name' ? (
+                      <span className={styles.productCell}>
+                        {product.img && (
+                          <Image
+                            src={product.img}
+                            alt={product.name || 'Product image'}
+                            width={48}
+                            height={48}
+                            className={styles.productImg}
+                          />
+                        )}
+                        <span className={styles.productName}>{product.name || ''}</span>
+                      </span>
+                    ) : (
+                      product[column.accessor as keyof Product]
+                    )}
                   </td>
                 ))}
               </tr>
