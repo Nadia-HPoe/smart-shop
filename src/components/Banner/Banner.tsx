@@ -60,7 +60,7 @@ const Banner = () => {
           </div>
           <div className={styles.text_right_side_top}>
             <span className={styles.subtitile}>
-              Products become more expensive faster than customers' incomes
+              Products become more expensive faster than customers incomes
             </span>
             <span className={styles.text}>Buyers are forced to save more and more.</span>
           </div>
