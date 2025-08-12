@@ -1,127 +1,127 @@
-@use '../../styles/_var' as var;
+@use "../../styles/_var" as var;
 .products {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .blocks {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(506px, 1fr));
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    width: 506px;
-    padding: 80px 140px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(506px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  width: 506px;
+  padding: 80px 140px;
 }
 .block {
-    display: flex;
-    flex-direction: column;
-    min-width: 506px;
-} 
+  display: flex;
+  flex-direction: column;
+  min-width: 506px;
+}
 
 .block.wide {
-    display: flex;
-    flex-direction: column;    
-    width: 1052px
+  display: flex;
+  flex-direction: column;
+  width: 1052px;
 }
 
 .images_wrapper {
-    display: flex;
+  display: flex;
 }
 
 .img_block_wide_small {
-    display: none;
+  display: none;
 }
 
 .btn_products {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-.link{
-    height: 68px;
-    width: 100%;
-    background-color:  #94B335;
-    color: #FFFFFF;
-    border: none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    text-align: center;
-    padding: 18px;
-    font-weight: 600;
-    font-family: var.$raleway;
-    font-size: 26px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.8s ease;
+.link {
+  height: 68px;
+  width: 100%;
+  background-color: #94b335;
+  color: #ffffff;
+  border: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: center;
+  padding: 18px;
+  font-weight: 600;
+  font-family: var.$raleway;
+  font-size: 26px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.8s ease;
 
-    &:hover {
-        transition: all 0.8s ease;
-        background-color: var.$button-green;    
-    }
+  &:hover {
+    transition: all 0.8s ease;
+    background-color: var.$button-green;
+  }
 }
 
 .buttons {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1439px) {
-    .blocks {
-        padding: 80px 100px;        
-    }
+  .blocks {
+    padding: 80px 100px;
+  }
 }
 
 @media (max-width: 1099px) {
-    .blocks {
-        grid-template-columns: repeat(1, minmax(506px, 1fr));    
-    }
-    .img_block{
-        width: 506px;
-        object-fit: cover
-    }
-    .block.wide {
-        width: 506px;
-    }
-    .img_block_wide_small {
-        display: block;
-        object-fit: cover
-    }
-    .img_block_wide{
-        display: none;
-        object-fit: cover
-    }
-    .buttons {
-        display: flex;
-        gap: 98px;
-        max-width: 610px;
-        justify-content: end;
-    }
-    .button {
-        width: 48px;
-        height: 48px;
-        background-color: #8CB800;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .blocks {
+    grid-template-columns: repeat(1, minmax(506px, 1fr));
+  }
+  .img_block {
+    width: 506px;
+    object-fit: cover;
+  }
+  .block.wide {
+    width: 506px;
+  }
+  .img_block_wide_small {
+    display: block;
+    object-fit: cover;
+  }
+  .img_block_wide {
+    display: none;
+    object-fit: cover;
+  }
+  .buttons {
+    display: flex;
+    gap: 98px;
+    max-width: 610px;
+    justify-content: end;
+  }
+  .button {
+    width: 48px;
+    height: 48px;
+    background-color: #8cb800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 743px) {
-    .blocks {
-        padding: 30px 20px;
-    }
-    .block{
-        width: 350px;
-    }
-    .btn_products {
-        width: 350px;
-    }
-     .img_block{
-        width: 350px;
-        height: 200px;
-    }
-    .img_block_wide_small {
-        width: 350px;
-        height: 200px;
-    }
+  .blocks {
+    padding: 30px 20px;
+  }
+  .block {
+    width: 350px;
+  }
+  .btn_products {
+    width: 350px;
+  }
+  .img_block {
+    width: 350px;
+    height: 200px;
+  }
+  .img_block_wide_small {
+    width: 350px;
+    height: 200px;
+  }
 }
