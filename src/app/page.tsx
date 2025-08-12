@@ -12,6 +12,7 @@ import Banner from '@/components/Banner/Banner';
 import ContactUs from '@/components/ContactUs/ContactUs';
 import Footer from '@/components/Footer/Footer';
 import Profit from '@/components/Profit/Profit';
+import Products from '@/components/Products/Products';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Advantages />
         <Story />
         <News />
+        <Products/>
         <ContactUs />
         <Footer />
       </div>

@@ -1,11 +1,11 @@
-import React from 'react';
-import searchIcon from '../../../public/images/banner/search_icon.svg';
-import imageLeftSide from '../../../public/images/banner/banner_left_side.png';
-import imageRightSideTop from '../../../public/images/banner/bunner_right_side_top.png';
-import imageRightSideBottom from '../../../public/images/banner/banner_right_side_bottom.png';
-import Image from 'next/image';
-import styles from './banner.module.scss';
-import Link from 'next/link';
+import React from "react";
+import searchIcon from "../../../public/images/banner/search_icon.svg";
+import imageLeftSide from "../../../public/images/banner/banner_left_side.png";
+import imageRightSideTop from "../../../public/images/banner/bunner_right_side_top.png";
+import imageRightSideBottom from "../../../public/images/banner/banner_right_side_bottom.png";
+import Image from "next/image";
+import styles from "./banner.module.scss";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -56,13 +56,17 @@ const Banner = () => {
           />
           <div className={styles.text_right_side_bottom}>
             <span className={styles.subtitile}>Online growth</span>
-            <span className={styles.text}>Product sales and delivery services</span>
+            <span className={styles.text}>
+              Product sales and delivery services
+            </span>
           </div>
           <div className={styles.text_right_side_top}>
             <span className={styles.subtitile}>
-              Products become more expensive faster than customers incomes
+              Products become more expensive faster than customers&apos incomes
             </span>
-            <span className={styles.text}>Buyers are forced to save more and more.</span>
+            <span className={styles.text}>
+              Buyers are forced to save more and more.
+            </span>
           </div>
           <Image
             src={imageRightSideBottom}

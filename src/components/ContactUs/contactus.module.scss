@@ -52,8 +52,15 @@
   }
 }
 
+.error {
+  color: var.$red;
+  font-size: 16px;
+  margin: 10px 0 0 20px;
+}
+
 .checkboxRow {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 8px;
   font-size: 16px;
@@ -98,6 +105,7 @@
   font-family: var.$raleway;
   font-weight: 700;
   font-size: 40px;
+  text-transform: uppercase;
   line-height: 47px;
   border: none;
   border-radius: 120px;
@@ -209,7 +217,7 @@
   }
   .inputGroup {
     label {
-      font-size: 14px;
+      font-size: 16px;
       padding-left: 20px;
     }
 
@@ -220,7 +228,7 @@
     }
   }
   .checkboxRow {
-    font-size: 14px;
+    font-size: 16px;
     gap: 8px;
     margin-top: 8px;
   }
