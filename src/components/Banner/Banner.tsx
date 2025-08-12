@@ -11,7 +11,9 @@ const Banner = () => {
   return (
     <section className={styles.banner}>
       <div className={styles.title_wrapper}>
-        <h1 className={styles.title}>Why your shop losing sales and profit?</h1>
+        <h1 className={styles.title}>
+          Why is your shop losing sales and profit?
+        </h1>
         <form className={styles.form}>
           <div className={styles.input_wrapper}>
             <Image
