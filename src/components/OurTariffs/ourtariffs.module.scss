@@ -1,0 +1,163 @@
+@use '../../styles/_var' as var;
+
+.ourTariffs {
+  padding: 80px 380px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var.$raleway;
+  color: var.$black;
+  gap: 50px;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  padding-bottom: 40px;
+}
+
+.tableWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.table td {
+  border: 1px solid #bdbdbd;
+}
+
+.table_item {
+  padding: 10px 15px;
+  color: #51611d;
+  & > span {
+    color: var.$red;
+  }
+}
+.table_header {
+  padding: 21px;
+  font-weight: 600;
+  color: #0f4e2a;
+  width: 336px;
+  height: 66px;
+  & > span {
+    color: var.$red;
+  }
+}
+
+.note {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  & > span {
+    color: var.$red;
+  }
+}
+
+.ourTariffsBtn {
+  font-family: var.$raleway;
+  font-size: 18px;
+  font-weight: 700;
+  color: var.$black;
+  padding: 19.5px 57.5px;
+  border: 2px solid var.$pink;
+  border-radius: 52px;
+  background-color: var.$l-pink;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var.$hover-pink;
+  }
+}
+
+@media (max-width: 1919px) {
+  .ourTariffs {
+    padding: 80px 150px 50px;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .ourTariffs {
+    padding: 80px 120px 50px;
+    gap: 50px;
+  }
+  .table {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .ourTariffs {
+    padding: 60px 50px 0;
+    gap: 30px;
+  }
+  .price {
+    font-size: 31px;
+    padding-bottom: 30px;
+  }
+  .table {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .table_header {
+    color: #0f4e2a;
+    width: 162px;
+    height: 80px;
+  }
+  .note {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .ourTariffsBtn {
+    font-size: 16px;
+    padding: 16px 53px;
+  }
+}
+
+@media (max-width: 743px) {
+  .ourTariffs {
+    padding: 50px 0 0;
+    gap: 16px;
+  }
+  .price {
+    font-size: 20px;
+    padding: 0 0 20px 20px;
+  }
+
+  .table {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .table_header {
+    padding: 7px 3px 7px 15px;
+    color: #0f4e2a;
+    width: 96px;
+    height: 38px;
+  }
+  .table_item {
+    padding: 7px 15px;
+  }
+
+  .note {
+    padding: 10px 40px 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .ourTariffsBtn {
+    font-size: 12px;
+    padding: 13px 35px;
+  }
+}

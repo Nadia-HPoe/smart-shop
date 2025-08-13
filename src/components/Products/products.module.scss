@@ -1,4 +1,4 @@
-@use "../../styles/_var" as var;
+@use '../../styles/_var' as var;
 .products {
   display: flex;
   flex-direction: column;
@@ -9,13 +9,12 @@
   grid-template-columns: repeat(3, minmax(506px, 1fr));
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  width: 506px;
-  padding: 80px 140px;
+  padding: 80px 140px 0;
 }
 .block {
   display: flex;
   flex-direction: column;
-  min-width: 506px;
+  width: 506px;
 }
 
 .block.wide {
@@ -63,10 +62,59 @@
 .buttons {
   display: none;
 }
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1919px) {
+  .blocks {
+    grid-template-columns: repeat(2, minmax(560px, 1fr));
+  }
+  .block {
+    width: 560px;
+  }
+  .img_block {
+    width: 560px;
+    height: auto;
+    object-fit: cover;
+  }
+  .img_block_wide {
+    width: 1160px;
+    height: auto;
+    object-fit: cover;
+  }
+  .block.wide {
+    width: 1160px;
+  }
+}
 
 @media (max-width: 1439px) {
   .blocks {
-    padding: 80px 100px;
+    grid-template-columns: repeat(2, minmax(430px, 1fr));
+    padding: 80px 100px 0;
+    grid-column-gap: 40px;
+  }
+  .block {
+    width: 430px;
+  }
+  .img_block {
+    width: 430px;
+    object-fit: cover;
+  }
+  .img_block_wide {
+    width: 905px;
+    object-fit: cover;
+  }
+  .block.wide {
+    width: 905px;
   }
 }
 
@@ -90,30 +138,27 @@
     object-fit: cover;
   }
   .buttons {
+    padding-top: 60px;
     display: flex;
-    gap: 98px;
-    max-width: 610px;
-    justify-content: end;
-  }
-  .button {
-    width: 48px;
-    height: 48px;
-    background-color: #8cb800;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 100px;
+  }
+  .link {
+    width: 506px;
   }
 }
 
 @media (max-width: 743px) {
   .blocks {
-    padding: 30px 20px;
+    padding: 30px 20px 0;
   }
   .block {
     width: 350px;
   }
   .btn_products {
+    width: 350px;
+  }
+  .link {
     width: 350px;
   }
   .img_block {
@@ -123,5 +168,10 @@
   .img_block_wide_small {
     width: 350px;
     height: 200px;
+    object-position: left;
+  }
+  .buttons {
+    padding-top: 20px;
+    gap: 80px;
   }
 }

@@ -7,7 +7,7 @@ export const navigationItems = [
   {
     id: 2,
     text: 'Prices',
-    href: '/',
+    href: '#prices',
   },
   {
     id: 3,

@@ -11,6 +11,7 @@ import Banner from '@/components/Banner/Banner';
 
 import ContactUs from '@/components/ContactUs/ContactUs';
 import Footer from '@/components/Footer/Footer';
+import OurTariffs from '@/components/OurTariffs/OurTariffs';
 import Profit from '@/components/Profit/Profit';
 import Products from '@/components/Products/Products';
 
@@ -22,13 +23,14 @@ export default function Home() {
         <Banner />
         <ToolsSlide />
         <Profit />
+        <OurTariffs />
         <Competitors />
         <Banner2 />
         <FAQ />
         <Advantages />
         <Story />
         <News />
-        <Products/>
+        <Products />
         <ContactUs />
         <Footer />
       </div>

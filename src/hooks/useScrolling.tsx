@@ -9,27 +9,15 @@ type ScrollHookReturn = {
   scrollByAmount: number;
 };
 
-export function useScrolling(initialScrollByAmount = 300): ScrollHookReturn {
+export function useScrolling(
+  initialScrollByAmount = 300
+): ScrollHookReturn & { refresh: () => void } {
   // useRef<HTMLDivElement | null>
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   const scrollByAmount = initialScrollByAmount;
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
-
-  const scrollLeft = () => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      container.scrollBy({ left: -scrollByAmount, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRight = () => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      container.scrollBy({ left: scrollByAmount, behavior: 'smooth' });
-    }
-  };
 
   const checkScrollPosition = () => {
     const container = scrollContainerRef.current;
@@ -46,16 +34,51 @@ export function useScrolling(initialScrollByAmount = 300): ScrollHookReturn {
     const container = scrollContainerRef.current;
     if (!container) return;
 
-    checkScrollPosition();
+    let scrollTimeout: number | null = null;
+    const onScroll = () => {
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+      scrollTimeout = window.setTimeout(checkScrollPosition, 200);
+    };
 
-    container.addEventListener('scroll', checkScrollPosition);
-    window.addEventListener('resize', checkScrollPosition);
+    const initialDelay = window.setTimeout(() => {
+      checkScrollPosition();
+
+      container.addEventListener('scroll', onScroll);
+      window.addEventListener('resize', checkScrollPosition);
+    }, 4000);
 
     return () => {
-      container.removeEventListener('scroll', checkScrollPosition);
+      clearTimeout(initialDelay);
+      if (container) {
+        container.removeEventListener('scroll', onScroll);
+      }
       window.removeEventListener('resize', checkScrollPosition);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
     };
   }, []);
+
+  const scrollLeft = () => {
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.scrollBy({ left: -scrollByAmount, behavior: 'smooth' });
+      setTimeout(checkScrollPosition, 400);
+    }
+  };
+
+  const scrollRight = () => {
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.scrollBy({ left: scrollByAmount, behavior: 'smooth' });
+      setTimeout(checkScrollPosition, 400);
+    }
+  };
+  const refresh = () => {
+    checkScrollPosition();
+  };
 
   return {
     canScrollLeft,
@@ -64,5 +87,6 @@ export function useScrolling(initialScrollByAmount = 300): ScrollHookReturn {
     scrollRight,
     scrollContainerRef,
     scrollByAmount,
+    refresh,
   };
 }

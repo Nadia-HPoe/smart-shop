@@ -1,11 +1,11 @@
-"use client";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { useRecaptcha } from "@/hooks/useRecaptcha";
-import ReCAPTCHA from "react-google-recaptcha";
-import Title from "../Title/Title";
-import styles from "./contactus.module.scss";
-import Image from "next/image";
+'use client';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { useRecaptcha } from '@/hooks/useRecaptcha';
+import ReCAPTCHA from 'react-google-recaptcha';
+import Title from '../Title/Title';
+import styles from './contactus.module.scss';
+import Image from 'next/image';
 
 type FormData = {
   store: string;
@@ -22,31 +22,23 @@ const ContactUs = () => {
     reset,
     formState: { errors, isSubmitting },
   } = useForm<FormData>({
-    mode: "onSubmit",
+    mode: 'onSubmit',
     defaultValues: {
-      store: "",
-      address: "",
-      email: "",
-      contact: "",
+      store: '',
+      address: '',
+      email: '',
+      contact: '',
       agree: false,
     },
   });
 
-  const {
-    recaptchaRef,
-    recaptchaToken,
-    resetRecaptcha,
-    setRecaptchaToken,
-    isLoading,
-  } = useRecaptcha({
-    onVerify: (token) => {
-      console.log(
-        "reCAPTCHA verified with token:",
-        token.substring(0, 10) + "..."
-      );
-      setRecaptchaToken(token);
-    },
-  });
+  const { recaptchaRef, recaptchaToken, resetRecaptcha, setRecaptchaToken, isLoading } =
+    useRecaptcha({
+      onVerify: (token) => {
+        console.log('reCAPTCHA verified with token:', token.substring(0, 10) + '...');
+        setRecaptchaToken(token);
+      },
+    });
 
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitSuccess, setSubmitSuccess] = useState<string | null>(null);
@@ -56,38 +48,36 @@ const ContactUs = () => {
     setSubmitSuccess(null);
 
     if (!recaptchaToken) {
-      setSubmitError("Please complete the reCAPTCHA verification.");
+      setSubmitError('Please complete the reCAPTCHA verification.');
       return;
     }
 
     try {
       const formData = new FormData();
-      formData.append("name", data.store);
-      formData.append("address", data.address);
-      formData.append("email", data.email);
-      formData.append("contact", data.contact);
+      formData.append('name', data.store);
+      formData.append('address', data.address);
+      formData.append('email', data.email);
+      formData.append('contact', data.contact);
 
-      const response = await fetch("https://feedback.foodfutures.net", {
-        method: "POST",
+      const response = await fetch('https://feedback.foodfutures.net', {
+        method: 'POST',
         headers: {
-          Accept: "application/json",
+          Accept: 'application/json',
         },
         body: formData,
       });
 
       if (response.ok) {
-        setSubmitSuccess(
-          "Your feedback was successfully submitted. Thank you!"
-        );
+        setSubmitSuccess('Your feedback was successfully submitted. Thank you!');
         reset();
         resetRecaptcha();
-        setRecaptchaToken("");
+        setRecaptchaToken('');
       } else {
-        setSubmitError("Submission failed. Please try again later.");
+        setSubmitError('Submission failed. Please try again later.');
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
-      setSubmitError("An error occurred during submission. Please try again.");
+      console.error('Error submitting form:', error);
+      setSubmitError('An error occurred during submission. Please try again.');
     }
   };
 
@@ -108,18 +98,14 @@ const ContactUs = () => {
         width={390}
         height={216}
       />
-      <form
-        className={styles.form}
-        onSubmit={handleSubmit(onSubmit)}
-        noValidate
-      >
+      <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className={styles.inputsRow}>
           <div className={styles.inputGroup}>
             <label htmlFor='store'>Your Store Name*</label>
             <input
               id='store'
               type='text'
-              {...register("store", { required: "Store name is required" })}
+              {...register('store', { required: 'Store name is required' })}
               aria-invalid={!!errors.store}
               aria-describedby='store-error'
             />
@@ -135,7 +121,7 @@ const ContactUs = () => {
             <input
               id='address'
               type='text'
-              {...register("address", { required: "Address is required" })}
+              {...register('address', { required: 'Address is required' })}
               aria-invalid={!!errors.address}
               aria-describedby='address-error'
             />
@@ -150,11 +136,11 @@ const ContactUs = () => {
             <input
               id='email'
               type='email'
-              {...register("email", {
-                required: "Email is required",
+              {...register('email', {
+                required: 'Email is required',
                 pattern: {
                   value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                  message: "Invalid email address",
+                  message: 'Invalid email address',
                 },
               })}
               aria-invalid={!!errors.email}
@@ -171,9 +157,7 @@ const ContactUs = () => {
             <input
               id='contact'
               type='text'
-              {...register("contact", {
-                required: "Contact information is required",
-              })}
+              {...register('contact', { required: 'Contact information is required' })}
               aria-invalid={!!errors.contact}
               aria-describedby='contact-error'
             />
@@ -184,28 +168,28 @@ const ContactUs = () => {
             )}
           </div>
         </div>
-        <div className={styles.checkboxRow}>
-          <input
-            id='agree'
-            type='checkbox'
-            {...register("agree", {
-              required: "You must agree to the Privacy Policy",
-            })}
-            aria-invalid={!!errors.agree}
-            aria-describedby='agree-error'
-          />
-          <label htmlFor='agree' className={styles.checkboxLabel}>
-            I have read and agree to the{" "}
-            <a
-              href='/privacy-policy'
-              target='_blank'
-              rel='noopener noreferrer'
-              tabIndex={0}
-              className={styles.privacyPolicyLink}
-            >
-              Privacy Policy
-            </a>
-          </label>
+        <div className={styles.checkbox_wrapper}>
+          <div className={styles.checkboxRow}>
+            <input
+              id='agree'
+              type='checkbox'
+              {...register('agree', { required: 'You must agree to the Privacy Policy' })}
+              aria-invalid={!!errors.agree}
+              aria-describedby='agree-error'
+            />
+            <label htmlFor='agree' className={styles.checkboxLabel}>
+              I have read and agree to the{' '}
+              <a
+                href='/privacy-policy'
+                target='_blank'
+                rel='noopener noreferrer'
+                tabIndex={0}
+                className={styles.privacyPolicyLink}
+              >
+                Privacy Policy
+              </a>
+            </label>
+          </div>
           {errors.agree && (
             <p className={styles.error} id='agree-error' role='alert'>
               {errors.agree.message}
@@ -216,7 +200,7 @@ const ContactUs = () => {
           {isLoading && <p>Loading reCAPTCHA...</p>}
           <ReCAPTCHA
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_TOKEN!}
-            onChange={(token) => setRecaptchaToken(token || "")}
+            onChange={(token) => setRecaptchaToken(token || '')}
             ref={recaptchaRef}
           />
         </div>
@@ -237,7 +221,7 @@ const ContactUs = () => {
           className={styles.submitBtn}
           aria-busy={isSubmitting || isLoading}
         >
-          {isSubmitting ? "Submitting..." : "Increase Store Profit"}
+          {isSubmitting ? 'Submitting...' : 'Increase Store Profit'}
         </button>
       </form>
     </section>

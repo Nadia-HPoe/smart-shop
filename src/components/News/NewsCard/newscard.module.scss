@@ -4,6 +4,7 @@
   font-family: var.$raleway;
   color: var.$black;
   flex: 0 0 auto;
+  min-height: 515px;
   width: 484px;
   scroll-snap-align: center;
   display: flex;
@@ -19,13 +20,19 @@
 
 .card_tags {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.card_tag_wrapper {
+  display: flex;
+  flex-direction: row;
   gap: 12px;
 }
 .card_tag {
   background: var.$white;
   border: 1px solid var.$pink;
   border-radius: 6px;
-  padding: 3px 13px;
+  padding: 4px 13px 2px;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -43,22 +50,55 @@
   font-size: 24px;
   line-height: 140%;
 }
-.card_paragraph {
+.card_paragraph,
+.card_paragraph_modal {
   padding-top: 12px;
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
 }
-
+.card_paragraph {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .card_links {
   display: flex;
   justify-content: end;
   gap: 8px;
 }
+.card_button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var.$main-green;
+  transition: all 0.7s ease;
+  &:hover {
+    transition: all 0.7s ease;
+    color: var.$l-green;
+  }
+}
+.links {
+  text-decoration: underline;
+  color: var.$red;
+  overflow-wrap: break-word;
+}
 
 @media (max-width: 1439px) {
   .card_wrapper {
     width: 348px;
+    padding: 20px;
+  }
+  .card_subtitle {
+    font-size: 20px;
   }
   .card_image {
     width: 300px;
@@ -67,10 +107,8 @@
 }
 
 @media (max-width: 1099px) {
-  .card_subtitle {
-    font-size: 20px;
-  }
-  .card_paragraph {
+  .card_paragraph,
+  .card_paragraph_modal {
     font-size: 16px;
   }
   .card_links {
@@ -81,10 +119,18 @@
 
 @media (max-width: 743px) {
   .card_wrapper {
+    min-height: 302px;
     width: 180px;
     gap: 12px;
-    padding: 12px;
+    padding: 10px;
   }
+  .card_tags {
+    gap: 5px;
+  }
+  .card_tag_wrapper {
+    gap: 5px;
+  }
+
   .card_tag {
     border: 0.5px solid var.$pink;
     border-radius: 3px;
@@ -99,7 +145,8 @@
   .card_subtitle {
     font-size: 12px;
   }
-  .card_paragraph {
+  .card_paragraph,
+  .card_paragraph_modal {
     padding-top: 6px;
     font-size: 10px;
     line-height: 12px;
@@ -107,5 +154,14 @@
   .card_icon {
     width: 20px;
     height: 20px;
+  }
+  .card_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .card_button {
+    font-size: 12px;
+    padding-bottom: 10px;
   }
 }

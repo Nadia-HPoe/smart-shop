@@ -16,7 +16,7 @@ const ToolsSlide: React.FC = () => {
       <Title title={'Our tools generate additional income'} />
       <div
         className={styles.slider}
-        ref={scrollContainerRef as React.RefObject<HTMLDivElement>}
+        ref={scrollContainerRef}
         role='region'
         aria-label='Tools slide container'
       >
@@ -28,9 +28,9 @@ const ToolsSlide: React.FC = () => {
       <div className={styles.arrows}>
         <button
           onClick={scrollLeft}
-          disabled={!canScrollLeft}
           className={styles.arrowLeft}
           aria-label='Previous'
+          disabled={!canScrollLeft}
         >
           <Image src='/images/arrow-left.png' alt='slider arrow left' width={48} height={48} />
         </button>

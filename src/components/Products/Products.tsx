@@ -1,12 +1,10 @@
-"use client";
-import Image from "next/image";
-import Title from "../Title/Title";
-import styles from "./products.module.scss";
-import { productsItems } from "@/constants/GetProductsItems";
-import arrowLeft from "../../../public/images/products/Arrow_left.png";
-import arrowRight from "../../../public/images/products/Arrow_right.png";
-import { useCallback, useEffect, useState } from "react";
-import Link from "next/link";
+'use client';
+import Image from 'next/image';
+import Title from '../Title/Title';
+import styles from './products.module.scss';
+import { productsItems } from '@/constants/GetProductsItems';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 const Products = () => {
   const [currentGroup, setCurrentGroup] = useState(0);
@@ -14,13 +12,19 @@ const Products = () => {
   const SLIDES_PER_VIEW = 6;
   const totalGroups = Math.ceil(productsItems.length / SLIDES_PER_VIEW);
 
+  const listRef = useRef<HTMLDivElement>(null);
+
+  const scrollToLits = () => {
+    listRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   useEffect(() => {
     const handleResize = () => {
-      setIsTablet(window.innerWidth <= 1099 && window.innerWidth > 743);
+      setIsTablet(window.innerWidth <= 1099 && window.innerWidth > 374);
     };
     handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const getVisibleProducts = useCallback(() => {
@@ -34,22 +38,21 @@ const Products = () => {
   const visibleProducts = getVisibleProducts();
 
   const nextGroup = useCallback(() => {
+    scrollToLits();
     setCurrentGroup((prev) => (prev + 1) % totalGroups);
   }, [totalGroups]);
 
   const prevGroup = useCallback(() => {
+    scrollToLits();
     setCurrentGroup((prev) => (prev - 1 + totalGroups) % totalGroups);
   }, [totalGroups]);
 
   return (
-    <section className={styles.products}>
+    <section id='products' className={styles.products}>
       <Title title='Unco products' />
-      <div className={styles.blocks}>
+      <div ref={listRef} className={styles.blocks}>
         {visibleProducts.map((product) => (
-          <div
-            key={product.id}
-            className={`${styles.block} ${product.wide ? styles.wide : ""}`}
-          >
+          <div key={product.id} className={`${styles.block} ${product.wide ? styles.wide : ''}`}>
             {product.wide ? (
               <div className={styles.images_wrapper}>
                 <Image
@@ -81,13 +84,13 @@ const Products = () => {
             </Link>
           </div>
         ))}
-      </div>
-      <div className={styles.buttons}>
-        <div className={styles.button}>
-          <Image onClick={prevGroup} src={arrowLeft} alt='' />
-        </div>
-        <div className={styles.button}>
-          <Image onClick={nextGroup} src={arrowRight} alt='' />
+        <div className={styles.buttons}>
+          <button onClick={prevGroup} className={styles.button}>
+            <Image src='/images/arrow-left.png' alt='slider arrow left' width={48} height={48} />
+          </button>
+          <button className={styles.button} onClick={nextGroup}>
+            <Image src='/images/arrow-right.png' alt='slider arrow right' width={48} height={48} />
+          </button>
         </div>
       </div>
     </section>
