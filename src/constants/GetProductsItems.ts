@@ -107,7 +107,7 @@ export const productsItems: ProductItem[] = [
     {
         id: 17,
         title: "Unco Scanner",
-        img: "/images/products/Unco_Scanner.png",
+        img: "/images/products/Unco_scanner.png",
         imgSmall: "/images/products/Unco_scanner_small.png",
         href: "https://unco.market/Scanner",
         wide: true
