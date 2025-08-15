@@ -1,15 +1,31 @@
 'use client';
 
-import { toolsSlideItems } from '@/constants/GetToolsSlideItems';
+import { useState, useEffect } from 'react';
+import { useScrolling } from '@/hooks/useScrolling';
+import { loadTools } from '@/app/actions';
+import { ToolsRecords, transformTools } from '@/functions/transformTools';
 import SlideCard from './SlideCard/SlideCard';
+import Title from '../Title/Title';
 import styles from './toolsSlide.module.scss';
 import Image from 'next/image';
-import Title from '../Title/Title';
-import { useScrolling } from '@/hooks/useScrolling';
 
 const ToolsSlide: React.FC = () => {
+  const [tools, setTools] = useState<ToolsRecords[]>([]);
   const { canScrollLeft, canScrollRight, scrollLeft, scrollRight, scrollContainerRef } =
     useScrolling(300);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await loadTools();
+        if (res && res.status === 200 && res.data) {
+          setTools(transformTools(res.data));
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    })();
+  }, []);
 
   return (
     <div className={styles.toolsSlide}>
@@ -20,10 +36,15 @@ const ToolsSlide: React.FC = () => {
         role='region'
         aria-label='Tools slide container'
       >
-        {toolsSlideItems.map((item, index) => (
-          <SlideCard key={item.id ?? index} {...item} />
+        {tools.map((tools, index) => (
+          <SlideCard key={index} img={tools.img} title={tools.title} text={tools.text} />
         ))}
       </div>
+
+      {/* {toolsSlideItems.map((item, index) => (
+          <SlideCard key={item.id ?? index} {...item} />
+        ))}
+      </div> */}
 
       <div className={styles.arrows}>
         <button

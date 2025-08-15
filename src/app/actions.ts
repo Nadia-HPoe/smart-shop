@@ -6,9 +6,27 @@ export interface TransformedObject {
 }
 
 const NEXT_PUBLIC_SHEET_NEWS_RANGE = process.env.NEXT_PUBLIC_SHEET_NEWS_RANGE;
+const NEXT_PUBLIC_SHEET_TOOLS_RANGE = process.env.NEXT_PUBLIC_SHEET_TOOLS_RANGE;
 
 export const loadNews = async () => {
   const { sheets, spreadsheetId, range } = await initGoogleAPI(NEXT_PUBLIC_SHEET_NEWS_RANGE);
+  if (sheets) {
+    try {
+      const getRows = await sheets.spreadsheets.values.get({
+        spreadsheetId,
+        range,
+      });
+      console.log(getRows);
+      return { data: getRows.data.values as string[][], status: getRows.status };
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  return { data: null, status: 500 };
+};
+
+export const loadTools = async () => {
+  const { sheets, spreadsheetId, range } = await initGoogleAPI(NEXT_PUBLIC_SHEET_TOOLS_RANGE);
   if (sheets) {
     try {
       const getRows = await sheets.spreadsheets.values.get({
