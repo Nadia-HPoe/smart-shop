@@ -1,11 +1,22 @@
-import Image from 'next/image';
-import Title from '../Title/Title';
-import styles from './banner2.module.scss';
+import Image from "next/image";
+import Title from "../Title/Title";
+import styles from "./banner2.module.scss";
 
 function Banner2() {
   return (
     <section className={styles.banner2}>
-      <Title title='Food waste' />
+      <Title
+        title={
+          <>
+            food waste <br />
+            And money
+          </>
+        }
+      />
+      <h4 className={styles.subtitle}>
+        Digitalization leads to a reduction in food waste and increased money
+        savings.
+      </h4>
       <div className={styles.wrapper}>
         <div className={styles.texts}>
           <p className={styles.text}>
@@ -23,7 +34,8 @@ function Banner2() {
         </div>
         <div className={styles.links}>
           <p className={styles.link_text}>
-            * (Jones, 2004 cited in Lundqvist et al., 2008). According to the Guardian
+            * (Jones, 2004 cited in Lundqvist et al., 2008). According to the
+            Guardian
           </p>
           <a
             className={styles.link}
@@ -34,14 +46,22 @@ function Banner2() {
           </a>
           <p className={styles.link_text}>
             Source: 
-            <a className={styles.link} href='https://www.refed.com' target='blank'>
+            <a
+              className={styles.link}
+              href='https://www.refed.com'
+              target='blank'
+            >
               https://www.refed.com
             </a>
           </p>
           <p className={styles.link_text}>
-            {' '}
+            {" "}
             Source: 
-            <a className={styles.link} href='https://www.usda.gov' target='blank'>
+            <a
+              className={styles.link}
+              href='https://www.usda.gov'
+              target='blank'
+            >
               https://www.usda.gov
             </a>
           </p>

@@ -1,4 +1,4 @@
-@use '../../styles/_var' as var;
+@use "../../styles/_var" as var;
 .banner {
   font-family: var.$raleway;
   display: flex;
@@ -81,7 +81,7 @@
   display: flex;
   width: 1640px;
   gap: 270px;
-  margin-top: 200px;
+  margin-top: 500px;
 }
 .block_left_side {
   display: grid;
@@ -176,7 +176,7 @@
   .banner_blocks {
     width: 1200px;
     gap: 240px;
-    margin-top: 140px;
+    margin-top: 300px;
   }
   .title {
     font-size: 70px;
@@ -264,7 +264,7 @@
   .banner_blocks {
     width: 970px;
     gap: 70px;
-    margin-top: 70px;
+    margin-top: 200px;
   }
   .image_left_side {
     width: 350px;
@@ -288,7 +288,6 @@
     height: 200px;
   }
   .text_right_side_top {
-
     .subtitile,
     .text {
       max-width: 155px;
@@ -331,7 +330,7 @@
   .banner_blocks {
     width: 644px;
     gap: 100px;
-    margin-top: 70px;
+    margin-top: 200px;
   }
   .image_left_side {
     width: 216px;
@@ -374,7 +373,6 @@
   }
 }
 
-
 @media (max-width: 743px) {
   .title {
     font-size: 32px;
@@ -402,7 +400,7 @@
   .banner_blocks {
     width: 390px;
     gap: 0;
-    margin-top: 130px;  
+    margin-top: 300px;
   }
   .image_left_side {
     width: 119px;

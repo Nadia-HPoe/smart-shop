@@ -1,4 +1,4 @@
-@use '../../styles/_var' as var;
+@use "../../styles/_var" as var;
 .banner2 {
   font-family: var.$raleway;
   color: var.$black;
@@ -7,6 +7,15 @@
   padding: 80px 140px 31px;
   font-weight: 500;
 }
+.subtitle {
+  padding: 50px 300px 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: var.$main-green;
+  text-align: center;
+}
+
 .texts {
   display: flex;
   gap: 50px;
@@ -45,6 +54,9 @@
 }
 
 @media (max-width: 1919px) {
+  .subtitle {
+    font-size: 40px;
+  }
   .text {
     width: 47%;
     font-size: 36px;
@@ -61,6 +73,9 @@
 @media (max-width: 1439px) {
   .wrapper {
     padding: 80px 100px 31px;
+  }
+  .subtitle {
+    padding: 50px 150px 0;
   }
   .text {
     font-size: 26px;
@@ -79,6 +94,11 @@
 @media (max-width: 1099px) {
   .wrapper {
     padding: 60px 50px 45px;
+  }
+  .subtitle {
+    padding: 50px 50px 0;
+    font-size: 24px;
+    line-height: 140%;
   }
   .texts {
     flex-direction: column;
@@ -99,6 +119,10 @@
 @media (max-width: 743px) {
   .wrapper {
     padding: 50px 20px 20px;
+  }
+  .subtitle {
+    padding: 20px 10px 0;
+    font-size: 18px;
   }
   .text {
     font-size: 16px;
