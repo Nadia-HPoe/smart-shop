@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { sendContactFormData } from '@/app/actions';
 import { useRecaptcha } from '@/hooks/useRecaptcha';
 import ReCAPTCHA from 'react-google-recaptcha';
 import Title from '../Title/Title';
@@ -53,21 +54,15 @@ const ContactUs = () => {
     }
 
     try {
-      const formData = new FormData();
-      formData.append('name', data.store);
-      formData.append('address', data.address);
-      formData.append('email', data.email);
-      formData.append('contact', data.contact);
+      const result = await sendContactFormData(
+        data.store,
+        data.address,
+        data.email,
+        data.contact,
+        recaptchaToken
+      )
 
-      const response = await fetch('https://feedback.foodfutures.net', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-        },
-        body: formData,
-      });
-
-      if (response.ok) {
+      if (result && result.status >= 200 && result.status < 300) {
         setSubmitSuccess('Your feedback was successfully submitted. Thank you!');
         reset();
         resetRecaptcha();
@@ -196,6 +191,7 @@ const ContactUs = () => {
             </p>
           )}
         </div>
+        
         <div className={styles.inputGroup}>
           {isLoading && <p>Loading reCAPTCHA...</p>}
           <ReCAPTCHA

@@ -2,26 +2,21 @@
 
 import Image from 'next/image';
 import styles from './header.module.scss';
-import Navbar from './Navbar';
-import ModalWindow from './ModalWindow';
-import BurgerNav from './BurgerNav';
+import LanguageButton from './LanguageButton';
+import LinkHeader from './LinkHeader';
+import ButtonHeader from './ButtonHeader';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useMediaQuery } from 'react-responsive';
 
 function Header() {
-  const [isModal, setIsModal] = useState<boolean>(false);
+  const [isOpenBurger, setIsOpenBurger] = useState<boolean>(false);
+  const [isOpenLanguage, setIsOpenLanguage] = useState<boolean>(false);
+  const isDesktop = useMediaQuery({minWidth:1099})
+  const isTablet = useMediaQuery({minWidth:743, maxWidth:1098})
 
-  const openModal = () => {
-    if (isModal === false) {
-      setIsModal(true);
-    }
-  };
-
-  const closeModal = () => {
-    if (isModal === true) {
-      setIsModal(false);
-    }
-  };
+  const handleToggleBurger = () => setIsOpenBurger((prev:boolean) => !prev)
+  const handleToggleLanguage = () => setIsOpenLanguage((prev:boolean) => !prev)
 
   return (
     <header className={styles.header}>
@@ -33,15 +28,24 @@ function Header() {
           width={135}
           height={62}
         />
-        <Navbar />
       </div>
+      <LinkHeader 
+        onClick={handleToggleLanguage} 
+        onClickBurger={handleToggleBurger} 
+        isOpenLanguage={isOpenLanguage} 
+        isOpenBurger={isOpenBurger} 
+        className={styles.links_desktop}
+      />
       <div className={styles.headerActions}>
+        <div  className={styles.dropdown}>
+          {isDesktop && <LanguageButton isOpenLanguage={isOpenLanguage} className={styles.languages_icon_desktop} onClick={handleToggleLanguage}/>}
+        </div>
         <Link href='#contactus' className={styles.headerBtn}>
           Ask for free month
         </Link>
-        <BurgerNav openModal={openModal} />
+      {isTablet && <LanguageButton isOpenLanguage={isOpenLanguage} className={styles.languages_icon_mobile}  onClick={handleToggleLanguage}/>}
+      <ButtonHeader className={styles.burger_mobile} onClick={handleToggleBurger} />
       </div>
-      <ModalWindow isModal={isModal} closeModal={closeModal} />
     </header>
   );
 }
