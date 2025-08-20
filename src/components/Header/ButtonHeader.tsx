@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
 import Image from "next/image";
-import styles from './header.module.scss';
+// import styles from './header.module.scss';
 
 type ButtonHeaderProps = {
   className?: string;
   onClick?: () => void;
 };
 
-const ButtonHeader: React.FC<ButtonHeaderProps> = ({className, onClick}) => {
+const ButtonHeader: React.FC<ButtonHeaderProps> = ({ className, onClick }) => {
   return (
-    <button onClick={onClick}  className={className}>
+    <button onClick={onClick} className={className}>
       <Image
         src='/images/header/menu.svg'
         alt='Open navigation menu'
@@ -18,7 +18,7 @@ const ButtonHeader: React.FC<ButtonHeaderProps> = ({className, onClick}) => {
         height={40}
       />
     </button>
-  )
-}
+  );
+};
 
-export default ButtonHeader
+export default ButtonHeader;
