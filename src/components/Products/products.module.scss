@@ -151,6 +151,7 @@
 @media (max-width: 743px) {
   .blocks {
     padding: 30px 20px 0;
+    grid-template-columns: 1fr;
   }
   .block {
     width: 350px;
@@ -173,5 +174,33 @@
   .buttons {
     padding-top: 20px;
     gap: 80px;
+  }
+}
+@media (max-width: 389px) {
+  .blocks {
+    padding: 30px 10px 0;
+    grid-template-columns: 300px;
+  }
+  .block {
+    width: 300px;
+  }
+  .btn_products {
+    width: 300px;
+  }
+  .link {
+    width: 300px;
+    height: 55px;
+    font-size: 20px;
+  }
+  .img_block {
+    width: 300px;
+    height: 200px;
+  }
+  .img_block_wide_small {
+    width: 300px;
+    height: 200px;
+  }
+  .buttons {
+    gap: 50px;
   }
 }

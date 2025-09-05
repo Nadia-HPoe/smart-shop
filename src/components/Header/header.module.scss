@@ -170,7 +170,7 @@
     }
     .links_desktop {
       display: none;
-    } 
+    }
     .overlay {
       position: fixed;
       top: 0;
@@ -178,19 +178,19 @@
       width: 100%;
       height: 100%;
       background-color: #2C2C2CBD;
-      z-index: 10; 
+      z-index: 10;
       opacity: 0;
       transform: translateX(100%);
-      transition: 
+      transition:
         opacity 0.3s ease-in-out,
         transform 1s linear 0.3s;
 
       &[data-active="true"] {
         opacity: 100%;
         transform: translateX(0);
-        transition: opacity 0.5s ease-in-out;  
+        transition: opacity 0.5s ease-in-out;
       }
-    } 
+    }
     .links_mobile{
       position: fixed;
       right: 0;
@@ -203,11 +203,11 @@
       justify-content: center;
       z-index: 20;
       transform: translateX(100%);
-      transition: transform 0.5s ease-in-out;  
+      transition: transform 0.5s ease-in-out;
 
       &[data-active="true"] {
         transform: translateX(0);
-        transition: transform 0.5s ease-in-out;  
+        transition: transform 0.5s ease-in-out;
       }
 
     }
@@ -256,7 +256,7 @@
       text-decoration: none;
     }
     }
-  
+
     .headerActions .headerBtn {
       font-size: 14px;
     }
@@ -278,7 +278,7 @@
         font-size: 10px;
         padding: 10px 21.5px;
         width: 160px;
-      }    
+      }
     }
     .button_wrapper_mobile {
       position: fixed;
@@ -286,7 +286,7 @@
       left: 46px;
     }
      .links_mobile {
-      width: 100%; 
+      width: 100%;
     }
     .links_mobile_list {
       font-size: 24px;
@@ -301,12 +301,9 @@
 @media (max-width: 389px) {
   .header {
     padding: 20px 10px 40px;
+    gap: 12px;
     .headerActions {
       gap: 12px;
-      .headerBtn {
-        font-size: 9.5px;
-        padding: 8px 16px;
-      }
     }
   }
 }

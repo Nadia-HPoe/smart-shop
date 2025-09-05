@@ -1,4 +1,4 @@
-@use "../../styles/_var" as var;
+@use '../../styles/_var' as var;
 .banner {
   font-family: var.$raleway;
   display: flex;
@@ -288,6 +288,7 @@
     height: 200px;
   }
   .text_right_side_top {
+
     .subtitile,
     .text {
       max-width: 155px;
@@ -373,6 +374,7 @@
   }
 }
 
+
 @media (max-width: 743px) {
   .title {
     font-size: 32px;
@@ -400,7 +402,7 @@
   .banner_blocks {
     width: 390px;
     gap: 0;
-    margin-top: 300px;
+    margin-top: 200px;
   }
   .image_left_side {
     width: 119px;
@@ -442,6 +444,39 @@
     .text {
       max-width: 98px;
       font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 389px) {
+  .title {
+    font-size: 26px;
+  }
+    .banner_blocks {
+    width: 360px;
+    gap: 0;
+    margin-top: 150px;
+  }
+
+  .text_left_side {
+    .subtitile,
+    .text {
+      font-size: 9px;
+      line-height: 10px;
+    }
+  }
+  .text_right_side_top {
+    .subtitile,
+    .text {
+      font-size: 9px;
+      line-height: 10px;
+    }
+  }
+  .text_right_side_bottom {
+    .subtitile,
+    .text {
+      font-size: 9px;
+      line-height: 10px;
     }
   }
 }

@@ -50,3 +50,14 @@
     font-size: 18px;
   }
 }
+
+@media (max-width: 389px) {
+  .wrapper {
+    margin-top: 50px;
+    max-width: 200px;
+    padding: 20px 0 15px 20px;
+  }
+    .title {
+    font-size: 15px;
+  }
+}

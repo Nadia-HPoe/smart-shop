@@ -93,3 +93,11 @@
     }
   }
 }
+@media (max-width: 389px) {
+.toolsSlide {
+  gap: 20px;
+  .slider {
+      margin: 0 0 0 20px;
+    }
+}
+}
