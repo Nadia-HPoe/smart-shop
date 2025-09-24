@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { sendContactFormData } from '@/app/actions';
+import { sendContactFormData } from '@/app/[locale]/actions';
 import { useRecaptcha } from '@/hooks/useRecaptcha';
 import ReCAPTCHA from 'react-google-recaptcha';
 import Title from '../Title/Title';
@@ -191,7 +191,7 @@ const ContactUs = () => {
             </p>
           )}
         </div>
-        
+
         <div className={styles.inputGroup}>
           {isLoading && <p>Loading reCAPTCHA...</p>}
           <ReCAPTCHA

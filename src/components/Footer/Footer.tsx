@@ -3,8 +3,10 @@ import Link from 'next/link';
 import { socialData } from '@/constants/GetSocialsData';
 import { navigationItems } from '@/constants/GetNavigationItems';
 import styles from './footer.module.scss';
+import { useTranslations } from 'next-intl';
 
 function Footer() {
+const t = useTranslations("header")
   return (
     <footer className={styles.footer}>
       <div className={styles.navigation}>
@@ -13,7 +15,7 @@ function Footer() {
           {navigationItems.map((item) => (
             <li key={item.id}>
               <Link href={item.href} className={styles.footer_nav_item}>
-                {item.text}
+               {t(item.text)}
               </Link>
             </li>
           ))}

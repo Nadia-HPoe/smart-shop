@@ -1,18 +1,20 @@
 'use client';
+import { createRef, Ref  } from 'react';
 import Image from 'next/image'
 import styles from './header.module.scss';
 import LanguageMenu  from './LanguageMenu';
 import { useMediaQuery } from 'react-responsive';
+import { languagesList } from '@/constants/GetLanguageData';
 
 type LanguageButtonProps = {
   className?: string
-  onClick?: () => void;
+  onClick: () => void;
   isOpenLanguage?: boolean;
 };
 
 const LanguageButton: React.FC<LanguageButtonProps> = ({isOpenLanguage, onClick, className}) => {
-
-  const isMobile = useMediaQuery({maxWidth:743})
+const isMobile = useMediaQuery({maxWidth:743})
+const languageMenuRef: Ref<HTMLUListElement> = createRef();
 
 
   return (
@@ -25,9 +27,10 @@ const LanguageButton: React.FC<LanguageButtonProps> = ({isOpenLanguage, onClick,
             width={44}
             height={44}
       />
-      {isOpenLanguage && <LanguageMenu onClick={onClick} /> } 
+      {isOpenLanguage && <LanguageMenu ref={languageMenuRef}
+              menu={languagesList} /> }
     </div>
-    
+
   )
 }
 

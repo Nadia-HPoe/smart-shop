@@ -5,7 +5,7 @@ import Title from '../Title/Title';
 import styles from './news.module.scss';
 import NewsCard from './NewsCard/NewsCard';
 import Image from 'next/image';
-import { loadNews } from '@/app/actions';
+import { loadNews } from '@/app/[locale]/actions';
 import { NewsRecords, transformNews } from '@/functions/transformNews';
 
 const News: React.FC = () => {

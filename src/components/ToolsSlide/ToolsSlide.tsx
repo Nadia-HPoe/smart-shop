@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useScrolling } from '@/hooks/useScrolling';
-import { loadTools } from '@/app/actions';
+import { loadTools } from '@/app/[locale]/actions';
 import { ToolsRecords, transformTools } from '@/functions/transformTools';
 import SlideCard from './SlideCard/SlideCard';
 import Title from '../Title/Title';

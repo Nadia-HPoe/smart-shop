@@ -28,22 +28,6 @@ export default function OurTariffs() {
                 </tr>
               ))}
             </tbody>
-            {/* <tbody>
-              {tariffs.map((row, i) => (
-                <tr key={i}>
-                  <td
-                    dangerouslySetInnerHTML={{
-                      __html: row.left.replace('class="star"', `class=${styles.star}`),
-                    }}
-                  />
-                  <td
-                    dangerouslySetInnerHTML={{
-                      __html: row.right.replace('class="star"', `class=${styles.star}`),
-                    }}
-                  />
-                </tr>
-              ))}
-            </tbody> */}
           </table>
           <p className={styles.note}>
             <span>*</span>Basic functionality is included in the price, additional and premium
@@ -51,7 +35,7 @@ export default function OurTariffs() {
           </p>
         </div>
         <Link href='#contactus' className={styles.ourTariffsBtn}>
-          Ask for free month
+          Ask for discount
         </Link>
       </div>
     </section>

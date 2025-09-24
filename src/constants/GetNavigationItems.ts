@@ -1,27 +1,27 @@
 export const navigationItems = [
   {
     id: 1,
-    text: 'News',
+    text: 'links.link_1',
     href: '#news',
   },
   {
     id: 2,
-    text: 'Prices',
+    text: "links.link_2",
     href: '#prices',
   },
   {
     id: 3,
-    text: 'FAQ',
+    text: "links.link_3",
     href: '#faq',
   },
   {
     id: 4,
-    text: 'Our story',
+    text: "links.link_4",
     href: '#story',
   },
   {
     id: 5,
-    text: 'Unco Products',
+    text:"links.link_5",
     href: '#products',
   },
 ];

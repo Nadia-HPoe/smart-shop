@@ -84,6 +84,8 @@
 
   .language_list {
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 
     &:hover {
       color: var.$main-green;
@@ -196,7 +198,7 @@
       right: 0;
       top: 0;
       width: 70%;
-      height: 70%;
+      height: 1350px;
       background: white;
       display: flex;
       align-items: center;

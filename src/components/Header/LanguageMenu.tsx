@@ -1,28 +1,48 @@
-'use client';
+import { forwardRef } from 'react';
+import { Locale, usePathname, useRouter } from '@/i18n/routing';
+
 import styles from './header.module.scss';
 
-const languagesList = [
-  {text: "English", code: "en"},
-  {text: "German", code: "de"},
-  {text: 'Russian', code: 'ru' },
-  {text: 'Ukrainian', code: 'ua' },
-  {text: 'French', code: 'fr' },
-  {text: 'Italian', code: 'it' },
-  {text: 'Spanish', code: 'es' },
-]
 
-type languagesProps = {
+
+// const languagesList = [
+//   {text: "English", locale: "en"},
+//   {text: "German", locale: "de"},
+//   {text: 'Russian', locale: 'ru' },
+//   {text: 'Ukrainian', locale: 'ua' },
+//   {text: 'French', locale: 'fr' },
+//   {text: 'Italian', locale: 'it' },
+//   {text: 'Spanish', locale: 'es' },
+// ]
+type MenuItem = { text: string; code: string };
+
+type Props = {
+  menu: MenuItem[];
   onClick?: () => void;
 }
 
-const LanguageMenu: React.FC<languagesProps> = ({onClick}) => {
+const LanguageMenu = forwardRef<HTMLUListElement, Props>(function LanguageMenu(
+  { menu },
+  ref
+) {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleChange = (event: React.MouseEvent<HTMLLIElement>) => {
+    const nextLocale = event.currentTarget.dataset.code as Locale;
+    router.replace({ pathname }, { locale: nextLocale });
+  };
+
+
   return (
-    <ul className={styles.language_list_wrapper}>
-      {languagesList.map((list) => (
-        <li onClick={onClick} className={styles.language_list} key={list.code}>{list.text}</li>
+    <ul ref={ref} className={styles.language_list_wrapper}>
+      {menu.map(({ text, code }) => (
+                <li key={code} data-code={code} className={styles.language_list} onClick={handleChange}>
+          {text}
+        </li>
       ))}
     </ul>
-  )
-}
-
+  );
+});
+//  <Link href={list.locale as any} className={styles.language_list} key={list.locale}>{list.text}</Link>
 export default LanguageMenu

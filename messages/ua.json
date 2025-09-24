@@ -1,0 +1,137 @@
+{
+  "header": {
+    "links": {
+      "link_1": "News",
+      "link_2": "Prices",
+      "link_3": "FAQ",
+      "link_4": "News",
+      "link_5": "Our story",
+      "link_6": "Unco Products"
+    },
+    "button": "Ask for free month"
+  },
+  "banner1": {
+    "subtitle": "Why is your shop losing sales and profit?",
+    "input": "Check how your store compares to neighbouring grocery stores",
+    "button": "GET MY REPORT",
+    "card_1": {
+      "subtitle": "Rising costs",
+      "text": "Electricity, rent, staff, etc."
+    },
+    "card_2": {
+      "subtitle": "Products become more expensive faster than customers incomes",
+      "text": "Buyers are forced to save more and more."
+    },
+    "card_3": {
+      "subtitle": "Online growth",
+      "text": "Product sales and delivery services."
+    }
+  },
+  "tools": {
+    "title": "Our tools generate additional income"
+  },
+  "profit": {
+    "title1": "more profit",
+    "title2": "more sales",
+    "title3": "more repeat orders",
+    "text1": "increase in profit",
+    "text2": "increase in trade turnover"
+  },
+  "tariffs": {
+    "title": "OUR TARIFFS",
+    "subtitle": "730e + VAT per month",
+    "row1": {
+      "left": "Individual on-line shop",
+      "right": "A grocery store on-line shop, perfectly optimized to grow profit and sales. No lock-in. There are options for individualization, management etc. for an additional fee."
+    },
+    "row2": {
+      "left": "UNCO SMM",
+      "right": "Special, tailored to your store: increasing the average customer`s check and attract more solvent customers."
+    },
+    "row3": {
+      "left": "10+ tools for your growth",
+      "left_star": "*",
+      "right": "New customers through convenience and freshness"
+    },
+    "row4": {
+      "left": "",
+      "right": "Additional income from UNCO services",
+      "right_star": "*"
+    },
+
+    "row5": {
+      "left": "",
+      "right": "Reduced costs of personnel, equipment and inventory management"
+    },
+    "row6": { "left": "", "right": "Growing reputation and competitiveness" },
+    "row7": {
+      "left": "Free Contract: cancel anytime",
+      "right": "No lock-in. No cancellation fees."
+    },
+    "row8": {
+      "left": "Support",
+      "right": "Personal massager available all day"
+    },
+    "text": "*Basic functionality is included in the price, additional and premium options may be paid",
+    "button": "Ask for free month"
+  },
+  "competitors": {
+    "title": "competitors"
+  },
+  "banner2": {
+    "title": "Food waste",
+    "text": "More than 45% of all produce is wasted in the food supply chain*",
+    "text2": "On average, every 5 kg of food waste:",
+    "text3": "Methane (main greenhouse gas)"
+  },
+
+  "faq": {
+    "faq1": {
+      "question": "How is delivery of products to pick-up points organized?",
+      "answer": "Delivery of products to Eco-point pick-up points occurs in the morning on the agreed day, when farmers bring products packed in thermoboxes. Eco-point accepts thermoboxes and checks the integrity of the packaging. Products do not require additional storage conditions."
+    },
+    "faq2": {
+      "question": "How often are products delivered and what are the storage conditions?",
+      "answer": "The delivery schedule is coordinated with eco-point, products are delivered in thermoboxes, where they are stored for up to 24 hours, which ensures their freshness and quality until they are delivered to customers."
+    },
+    "faq3": {
+      "question": "What to do in case of problems with delivery or product quality?",
+      "answer": "If the farmer does not fulfill the delivery conditions or the product does not meet the quality requirements, the buyer is refunded the full price of the food futures contract."
+    }
+  },
+  "advantages": {
+    "title": "advantages",
+    "card1": {
+      "subtitle": "The price is two times \nlower than analogues",
+      "text": "We keep the price low (at cost level) since we have 11 more products in our ecosystem to increase business profitability, where we make money"
+    },
+    "card2": {
+      "subtitle": "Specialization \nexclusively in retail",
+      "text": "We have accumulated many years of experience, which is constantly updated and supplemented with the best new strategies, scenarios, visuals \nand other creatives."
+    },
+    "card3": {
+      "subtitle": "Team work",
+      "text": "Each client has 3-4 specialists plus a uniquely trained AI plus our weekly team meetings where we discuss the best solutions, results obtained and insights from the grocery retail market"
+    }
+  },
+  "news": {
+    "title": "NEWS"
+  },
+  "products": {
+    "title": "Unco products"
+  },
+  "contact": {
+    "title": "contact us",
+    "placeholderStore": "Your Store Name*",
+    "placeholderAddress": "Address*",
+    "placeholderEmail": "Email*",
+    "placeholderContact": "How to Contact You*",
+    "agreeText": "I have read and agreed to the",
+    "agreeSpan": "Privacy Policy",
+    "btnText": "Increase Store Profit"
+  },
+
+  "footer": {
+    "subtitle": "Contact us:"
+  }
+}
