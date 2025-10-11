@@ -1,137 +1,138 @@
 {
   "header": {
     "links": {
-      "link_1": "News",
-      "link_2": "Prices",
+      "link_1": "Actualités",
+      "link_2": "Tarifs",
       "link_3": "FAQ",
-      "link_4": "News",
-      "link_5": "Our story",
-      "link_6": "Unco Products"
+      "link_4": "Notre histoire",
+      "link_5": "Produits Unco"
     },
-    "button": "Ask for free month"
+    "button": "Demander une remise"
   },
   "banner1": {
-    "subtitle": "Why is your shop losing sales and profit?",
-    "input": "Check how your store compares to neighbouring grocery stores",
-    "button": "GET MY REPORT",
+    "subtitle": "Pourquoi votre magasin perd-il des ventes et des bénéfices ?",
+    "input": "Vérifiez comment votre magasin se compare aux épiceries voisines",
+    "button": "OBTENIR MON RAPPORT",
     "card_1": {
-      "subtitle": "Rising costs",
-      "text": "Electricity, rent, staff, etc."
+      "subtitle": "Coûts en hausse",
+      "text": "Électricité, loyer, personnel, etc."
     },
     "card_2": {
-      "subtitle": "Products become more expensive faster than customers incomes",
-      "text": "Buyers are forced to save more and more."
+      "subtitle": "Les produits deviennent plus chers plus vite que les revenus des clients",
+      "text": "Les acheteurs sont contraints d’économiser de plus en plus."
     },
     "card_3": {
-      "subtitle": "Online growth",
-      "text": "Product sales and delivery services."
+      "subtitle": "Croissance en ligne",
+      "text": "Vente de produits et services de livraison."
     }
   },
   "tools": {
-    "title": "Our tools generate additional income"
+    "title": "Nos outils génèrent des revenus supplémentaires"
   },
   "profit": {
-    "title1": "more profit",
-    "title2": "more sales",
-    "title3": "more repeat orders",
-    "text1": "increase in profit",
-    "text2": "increase in trade turnover"
+    "title1": "plus de bénéfices",
+    "title2": "plus de ventes",
+    "title3": "plus de commandes récurrentes",
+    "text1": "augmentation des bénéfices",
+    "text2": "augmentation du chiffre d’affaires"
   },
   "tariffs": {
-    "title": "OUR TARIFFS",
-    "subtitle": "730e + VAT per month",
+    "title": "NOS TARIFS",
+    "subtitle": "730 € + TVA par mois",
     "row1": {
-      "left": "Individual on-line shop",
-      "right": "A grocery store on-line shop, perfectly optimized to grow profit and sales. No lock-in. There are options for individualization, management etc. for an additional fee."
+      "left": "Boutique en ligne individuelle",
+      "right": "Une boutique en ligne pour épiceries, parfaitement optimisée pour augmenter les bénéfices et les ventes. Aucune obligation. Des options de personnalisation, de gestion, etc., sont disponibles moyennant des frais supplémentaires."
     },
     "row2": {
       "left": "UNCO SMM",
-      "right": "Special, tailored to your store: increasing the average customer`s check and attract more solvent customers."
+      "right": "Spécialement adapté à votre magasin : augmentation du panier moyen et attraction de clients plus solvables."
     },
     "row3": {
-      "left": "10+ tools for your growth",
+      "left": "10+ outils pour votre croissance",
       "left_star": "*",
-      "right": "New customers through convenience and freshness"
+      "right": "Nouveaux clients grâce à la commodité et à la fraîcheur"
     },
     "row4": {
       "left": "",
-      "right": "Additional income from UNCO services",
+      "right": "Revenus supplémentaires grâce aux services UNCO",
       "right_star": "*"
     },
-
     "row5": {
       "left": "",
-      "right": "Reduced costs of personnel, equipment and inventory management"
+      "right": "Réduction des coûts de personnel, d’équipement et de gestion des stocks"
     },
-    "row6": { "left": "", "right": "Growing reputation and competitiveness" },
+    "row6": {
+      "left": "",
+      "right": "Réputation et compétitivité accrues"
+    },
     "row7": {
-      "left": "Free Contract: cancel anytime",
-      "right": "No lock-in. No cancellation fees."
+      "left": "Contrat gratuit : annulez à tout moment",
+      "right": "Aucune obligation. Aucun frais d’annulation."
     },
     "row8": {
-      "left": "Support",
-      "right": "Personal massager available all day"
+      "left": "Assistance",
+      "right": "Gestionnaire personnel disponible toute la journée"
     },
-    "text": "*Basic functionality is included in the price, additional and premium options may be paid",
-    "button": "Ask for free month"
+    "text": "*Les fonctionnalités de base sont incluses dans le prix ; les options supplémentaires et premium peuvent être payantes",
+    "button": "Demander une remise"
   },
   "competitors": {
-    "title": "competitors"
+    "title": "Concurrents"
   },
   "banner2": {
-    "title": "Food waste",
-    "text": "More than 45% of all produce is wasted in the food supply chain*",
-    "text2": "On average, every 5 kg of food waste:",
-    "text3": "Methane (main greenhouse gas)"
+    "title": "Gaspillage alimentaire",
+    "title2": "et argent",
+    "subtitle": "La numérisation entraîne une réduction du gaspillage alimentaire et une augmentation des économies d'argent.",
+    "text": "Plus de 45 % de tous les produits sont gaspillés dans la chaîne d’approvisionnement alimentaire*",
+    "text2": "En moyenne, pour chaque 5 kg de déchets alimentaires :",
+    "text3": "Méthane (principal gaz à effet de serre)"
   },
-
   "faq": {
     "faq1": {
-      "question": "How is delivery of products to pick-up points organized?",
-      "answer": "Delivery of products to Eco-point pick-up points occurs in the morning on the agreed day, when farmers bring products packed in thermoboxes. Eco-point accepts thermoboxes and checks the integrity of the packaging. Products do not require additional storage conditions."
+      "question": "Comment est organisée la livraison des produits aux points de collecte ?",
+      "answer": "La livraison des produits aux points de collecte Eco-point a lieu le matin du jour convenu, lorsque les agriculteurs apportent les produits emballés dans des boîtes isothermes. L’Eco-point reçoit les boîtes et vérifie l’intégrité de l’emballage. Les produits ne nécessitent pas de conditions de stockage supplémentaires."
     },
     "faq2": {
-      "question": "How often are products delivered and what are the storage conditions?",
-      "answer": "The delivery schedule is coordinated with eco-point, products are delivered in thermoboxes, where they are stored for up to 24 hours, which ensures their freshness and quality until they are delivered to customers."
+      "question": "À quelle fréquence les produits sont-ils livrés et dans quelles conditions de stockage ?",
+      "answer": "Le calendrier de livraison est coordonné avec l’Eco-point. Les produits sont livrés dans des boîtes isothermes où ils peuvent être conservés jusqu’à 24 heures, garantissant leur fraîcheur et leur qualité jusqu’à la livraison aux clients."
     },
     "faq3": {
-      "question": "What to do in case of problems with delivery or product quality?",
-      "answer": "If the farmer does not fulfill the delivery conditions or the product does not meet the quality requirements, the buyer is refunded the full price of the food futures contract."
+      "question": "Que faire en cas de problème de livraison ou de qualité des produits ?",
+      "answer": "Si l’agriculteur ne respecte pas les conditions de livraison ou si le produit ne répond pas aux exigences de qualité, l’acheteur reçoit un remboursement complet du contrat à terme alimentaire."
     }
   },
   "advantages": {
-    "title": "advantages",
+    "title": "Avantages",
     "card1": {
-      "subtitle": "The price is two times \nlower than analogues",
-      "text": "We keep the price low (at cost level) since we have 11 more products in our ecosystem to increase business profitability, where we make money"
+      "subtitle": "Le prix est deux fois inférieur à celui des équivalents",
+      "text": "Nous maintenons un prix bas (au niveau du coût) car nous disposons de 11 autres produits dans notre écosystème qui augmentent la rentabilité des entreprises, où nous générons nos bénéfices."
     },
     "card2": {
-      "subtitle": "Specialization \nexclusively in retail",
-      "text": "We have accumulated many years of experience, which is constantly updated and supplemented with the best new strategies, scenarios, visuals \nand other creatives."
+      "subtitle": "Spécialisation exclusivement dans le commerce de détail",
+      "text": "Nous avons accumulé de nombreuses années d’expérience, constamment mises à jour et enrichies par les meilleures nouvelles stratégies, scénarios, visuels et autres créations."
     },
     "card3": {
-      "subtitle": "Team work",
-      "text": "Each client has 3-4 specialists plus a uniquely trained AI plus our weekly team meetings where we discuss the best solutions, results obtained and insights from the grocery retail market"
+      "subtitle": "Travail d’équipe",
+      "text": "Chaque client bénéficie de 3 à 4 spécialistes plus une IA spécialement formée, ainsi que de nos réunions d’équipe hebdomadaires où nous discutons des meilleures solutions, des résultats obtenus et des idées issues du marché de la distribution alimentaire."
     }
   },
   "news": {
-    "title": "NEWS"
+    "title": "ACTUALITÉS"
   },
   "products": {
-    "title": "Unco products"
+    "title": "Produits Unco"
   },
   "contact": {
-    "title": "contact us",
-    "placeholderStore": "Your Store Name*",
-    "placeholderAddress": "Address*",
-    "placeholderEmail": "Email*",
-    "placeholderContact": "How to Contact You*",
-    "agreeText": "I have read and agreed to the",
-    "agreeSpan": "Privacy Policy",
-    "btnText": "Increase Store Profit"
+    "title": "Contactez-nous",
+    "placeholderStore": "Nom de votre magasin*",
+    "placeholderAddress": "Adresse*",
+    "placeholderEmail": "E-mail*",
+    "placeholderContact": "Comment pouvons-nous vous contacter ?*",
+    "agreeText": "J’ai lu et j’accepte la",
+    "agreeSpan": "Politique de confidentialité",
+    "btnText": "Augmenter les bénéfices du magasin"
   },
-
   "footer": {
-    "subtitle": "Contact us:"
+    "subtitle": "Contactez-nous :"
   }
 }

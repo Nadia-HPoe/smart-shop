@@ -57,12 +57,14 @@
       "right": "Additional income from UNCO services",
       "right_star": "*"
     },
-
     "row5": {
       "left": "",
       "right": "Reduced costs of personnel, equipment and inventory management"
     },
-    "row6": { "left": "", "right": "Growing reputation and competitiveness" },
+    "row6": {
+      "left": "",
+      "right": "Growing reputation and competitiveness"
+    },
     "row7": {
       "left": "Free Contract: cancel anytime",
       "right": "No lock-in. No cancellation fees."
@@ -79,11 +81,12 @@
   },
   "banner2": {
     "title": "Food waste",
+    "title2": "and money",
+    "subtitle": "Digitalization leads to a reduction in food waste and increased money savings.",
     "text": "More than 45% of all produce is wasted in the food supply chain*",
     "text2": "On average, every 5 kg of food waste:",
     "text3": "Methane (main greenhouse gas)"
   },
-
   "faq": {
     "faq1": {
       "question": "How is delivery of products to pick-up points organized?",
@@ -129,7 +132,6 @@
     "agreeSpan": "Privacy Policy",
     "btnText": "Increase Store Profit"
   },
-
   "footer": {
     "subtitle": "Contact us:"
   }

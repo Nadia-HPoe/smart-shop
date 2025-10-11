@@ -1,30 +1,138 @@
 {
   "header": {
     "links": {
-      "link_1": "Новости",
-      "link_2": "Цены",
-      "link_3": "Часто задаваемые вопросы",
-      "link_4": "Новости",
-      "link_5": "Наша история",
-      "link_6": "Продукты Unco"
+      "link_1": "Noticias",
+      "link_2": "Precios",
+      "link_3": "Preguntas frecuentes",
+      "link_4": "Nuestra historia",
+      "link_5": "Productos Unco"
     },
-    "button": "Запросить бесплатный месяц"
+    "button": "Solicitar descuento"
   },
   "banner1": {
-    "subtitle": "Почему ваш магазин теряет продажи и прибыль?",
-    "input": "Проверьте, как ваш магазин сравнивается с соседними продуктовыми магазинами",
-    "button": "ПОЛУЧИТЬ ОТЧЁТ",
+    "subtitle": "¿Por qué su tienda está perdiendo ventas y beneficios?",
+    "input": "Compruebe cómo se compara su tienda con los supermercados vecinos",
+    "button": "OBTENER MI INFORME",
     "card_1": {
-      "subtitle": "Растущие расходы",
-      "text": "Электричество, аренда, персонал и т.д."
+      "subtitle": "Costos crecientes",
+      "text": "Electricidad, alquiler, personal, etc."
     },
     "card_2": {
-      "subtitle": "Цены на продукты растут быстрее доходов покупателей",
-      "text": "Покупатели вынуждены всё больше экономить."
+      "subtitle": "Los productos se encarecen más rápido que los ingresos de los clientes",
+      "text": "Los compradores se ven obligados a ahorrar cada vez más."
     },
     "card_3": {
-      "subtitle": "Рост онлайн-продаж",
-      "text": "Продажи продуктов и службы доставки."
+      "subtitle": "Crecimiento en línea",
+      "text": "Ventas de productos y servicios de entrega."
     }
+  },
+  "tools": {
+    "title": "Nuestras herramientas generan ingresos adicionales"
+  },
+  "profit": {
+    "title1": "más beneficios",
+    "title2": "más ventas",
+    "title3": "más pedidos repetidos",
+    "text1": "aumento de beneficios",
+    "text2": "incremento del volumen de ventas"
+  },
+  "tariffs": {
+    "title": "NUESTRAS TARIFAS",
+    "subtitle": "730 € + IVA al mes",
+    "row1": {
+      "left": "Tienda en línea individual",
+      "right": "Una tienda en línea para supermercados, perfectamente optimizada para aumentar los beneficios y las ventas. Sin compromiso. Existen opciones de personalización, gestión, etc., por un coste adicional."
+    },
+    "row2": {
+      "left": "UNCO SMM",
+      "right": "Especialmente adaptado a su tienda: aumenta el ticket promedio y atrae a clientes con mayor poder adquisitivo."
+    },
+    "row3": {
+      "left": "Más de 10 herramientas para su crecimiento",
+      "left_star": "*",
+      "right": "Nuevos clientes gracias a la comodidad y la frescura"
+    },
+    "row4": {
+      "left": "",
+      "right": "Ingresos adicionales a través de los servicios UNCO",
+      "right_star": "*"
+    },
+    "row5": {
+      "left": "",
+      "right": "Reducción de costes de personal, equipos y gestión de inventario"
+    },
+    "row6": {
+      "left": "",
+      "right": "Reputación y competitividad en aumento"
+    },
+    "row7": {
+      "left": "Contrato gratuito: cancele en cualquier momento",
+      "right": "Sin compromiso. Sin cargos por cancelación."
+    },
+    "row8": {
+      "left": "Soporte",
+      "right": "Asesor personal disponible todo el día"
+    },
+    "text": "*La funcionalidad básica está incluida en el precio; las opciones adicionales y premium pueden tener un coste extra",
+    "button": "Solicitar descuento"
+  },
+  "competitors": {
+    "title": "Competidores"
+  },
+  "banner2": {
+    "title": "Desperdicio de alimentos",
+    "title2": "y dinero",
+    "subtitle": "La digitalización conduce a una reducción del desperdicio de alimentos y a un mayor ahorro de dinero.",
+    "text": "Más del 45% de todos los productos se desperdician en la cadena de suministro alimentaria*",
+    "text2": "En promedio, por cada 5 kg de desperdicio alimentario:",
+    "text3": "Metano (principal gas de efecto invernadero)"
+  },
+  "faq": {
+    "faq1": {
+      "question": "¿Cómo se organiza la entrega de productos a los puntos de recogida?",
+      "answer": "La entrega de productos a los puntos de recogida Eco-point se realiza por la mañana en el día acordado, cuando los agricultores traen los productos empaquetados en cajas térmicas. El Eco-point recibe las cajas térmicas y verifica la integridad del embalaje. Los productos no requieren condiciones de almacenamiento adicionales."
+    },
+    "faq2": {
+      "question": "¿Con qué frecuencia se entregan los productos y cuáles son las condiciones de almacenamiento?",
+      "answer": "El calendario de entregas se coordina con el Eco-point. Los productos se entregan en cajas térmicas, donde pueden almacenarse hasta 24 horas, lo que garantiza su frescura y calidad hasta su entrega al cliente."
+    },
+    "faq3": {
+      "question": "¿Qué hacer en caso de problemas con la entrega o la calidad del producto?",
+      "answer": "Si el agricultor no cumple las condiciones de entrega o el producto no cumple los requisitos de calidad, el comprador recibe el reembolso total del contrato de futuros alimentarios."
+    }
+  },
+  "advantages": {
+    "title": "ventajas",
+    "card1": {
+      "subtitle": "El precio es dos veces más bajo que los equivalentes",
+      "text": "Mantenemos el precio bajo (al nivel del coste) porque tenemos 11 productos adicionales en nuestro ecosistema que aumentan la rentabilidad del negocio, donde obtenemos nuestros beneficios."
+    },
+    "card2": {
+      "subtitle": "Especialización exclusivamente en el comercio minorista",
+      "text": "Hemos acumulado muchos años de experiencia, que se actualiza constantemente y se complementa con las mejores estrategias, escenarios, elementos visuales y otros materiales creativos nuevos."
+    },
+    "card3": {
+      "subtitle": "Trabajo en equipo",
+      "text": "Cada cliente cuenta con 3–4 especialistas más una IA especialmente entrenada, además de nuestras reuniones de equipo semanales donde analizamos las mejores soluciones, los resultados obtenidos y las conclusiones del mercado minorista de alimentación."
+    }
+  },
+  "news": {
+    "title": "NOTICIAS"
+  },
+  "products": {
+    "title": "Productos Unco"
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "placeholderStore": "Nombre de su tienda*",
+    "placeholderAddress": "Dirección*",
+    "placeholderEmail": "Correo electrónico*",
+    "placeholderContact": "¿Cómo podemos contactarle?*",
+    "agreeText": "He leído y acepto la",
+    "agreeSpan": "Política de privacidad",
+    "btnText": "Aumentar la rentabilidad de la tienda"
+  },
+  "footer": {
+    "subtitle": "Contáctenos:"
   }
 }

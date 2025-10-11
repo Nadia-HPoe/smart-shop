@@ -1,137 +1,138 @@
 {
   "header": {
     "links": {
-      "link_1": "News",
-      "link_2": "Prices",
-      "link_3": "FAQ",
-      "link_4": "News",
-      "link_5": "Our story",
-      "link_6": "Unco Products"
+      "link_1": "Новини",
+      "link_2": "Ціни",
+      "link_3": "Питання та відповіді",
+      "link_4": "Наша історія",
+      "link_5": "Продукти Unco"
     },
-    "button": "Ask for free month"
+    "button": "Запитати знижку"
   },
   "banner1": {
-    "subtitle": "Why is your shop losing sales and profit?",
-    "input": "Check how your store compares to neighbouring grocery stores",
-    "button": "GET MY REPORT",
+    "subtitle": "Чому ваш магазин втрачає продажі та прибуток?",
+    "input": "Перевірте, як ваш магазин порівнюється з сусідніми продуктовими магазинами",
+    "button": "ОТРИМАТИ МОЙ ЗВІТ",
     "card_1": {
-      "subtitle": "Rising costs",
-      "text": "Electricity, rent, staff, etc."
+      "subtitle": "Зростання витрат",
+      "text": "Електроенергія, оренда, персонал тощо."
     },
     "card_2": {
-      "subtitle": "Products become more expensive faster than customers incomes",
-      "text": "Buyers are forced to save more and more."
+      "subtitle": "Ціни на продукти зростають швидше, ніж доходи покупців",
+      "text": "Покупці змушені все більше економити."
     },
     "card_3": {
-      "subtitle": "Online growth",
-      "text": "Product sales and delivery services."
+      "subtitle": "Онлайн-зростання",
+      "text": "Продаж товарів та служби доставки."
     }
   },
   "tools": {
-    "title": "Our tools generate additional income"
+    "title": "Наші інструменти приносять додатковий дохід"
   },
   "profit": {
-    "title1": "more profit",
-    "title2": "more sales",
-    "title3": "more repeat orders",
-    "text1": "increase in profit",
-    "text2": "increase in trade turnover"
+    "title1": "більше прибутку",
+    "title2": "більше продажів",
+    "title3": "більше повторних замовлень",
+    "text1": "збільшення прибутку",
+    "text2": "зростання товарообігу"
   },
   "tariffs": {
-    "title": "OUR TARIFFS",
-    "subtitle": "730e + VAT per month",
+    "title": "НАШІ ТАРИФИ",
+    "subtitle": "730 € + ПДВ на місяць",
     "row1": {
-      "left": "Individual on-line shop",
-      "right": "A grocery store on-line shop, perfectly optimized to grow profit and sales. No lock-in. There are options for individualization, management etc. for an additional fee."
+      "left": "Індивідуальний онлайн-магазин",
+      "right": "Онлайн-магазин для продуктових точок, оптимізований для збільшення прибутку та продажів. Без зобов’язань. Можливе індивідуальне налаштування, управління тощо за додаткову плату."
     },
     "row2": {
       "left": "UNCO SMM",
-      "right": "Special, tailored to your store: increasing the average customer`s check and attract more solvent customers."
+      "right": "Спеціально адаптовано для вашого магазину: збільшення середнього чека та залучення платоспроможніших клієнтів."
     },
     "row3": {
-      "left": "10+ tools for your growth",
+      "left": "10+ інструментів для вашого зростання",
       "left_star": "*",
-      "right": "New customers through convenience and freshness"
+      "right": "Нові клієнти завдяки зручності та свіжості"
     },
     "row4": {
       "left": "",
-      "right": "Additional income from UNCO services",
+      "right": "Додатковий дохід від сервісів UNCO",
       "right_star": "*"
     },
-
     "row5": {
       "left": "",
-      "right": "Reduced costs of personnel, equipment and inventory management"
+      "right": "Зменшення витрат на персонал, обладнання та управління запасами"
     },
-    "row6": { "left": "", "right": "Growing reputation and competitiveness" },
+    "row6": {
+      "left": "",
+      "right": "Зростання репутації та конкурентоспроможності"
+    },
     "row7": {
-      "left": "Free Contract: cancel anytime",
-      "right": "No lock-in. No cancellation fees."
+      "left": "Безкоштовний договір: можна скасувати в будь-який час",
+      "right": "Без зобов’язань. Без штрафів за скасування."
     },
     "row8": {
-      "left": "Support",
-      "right": "Personal massager available all day"
+      "left": "Підтримка",
+      "right": "Персональний менеджер доступний протягом усього дня"
     },
-    "text": "*Basic functionality is included in the price, additional and premium options may be paid",
-    "button": "Ask for free month"
+    "text": "*Базовий функціонал включено у вартість, додаткові та преміум-опції можуть бути платними",
+    "button": "Запитати знижку"
   },
   "competitors": {
-    "title": "competitors"
+    "title": "конкуренти"
   },
   "banner2": {
-    "title": "Food waste",
-    "text": "More than 45% of all produce is wasted in the food supply chain*",
-    "text2": "On average, every 5 kg of food waste:",
-    "text3": "Methane (main greenhouse gas)"
+    "title": "Харчові відходи",
+    "title2": "та гроші",
+    "subtitle": "Цифровізація призводить до зменшення харчових відходів і збільшення економії грошей.",
+    "text": "Понад 45% усіх продуктів втрачається в ланцюзі постачання*",
+    "text2": "У середньому, кожні 5 кг харчових відходів:",
+    "text3": "Метан (основний парниковий газ)"
   },
-
   "faq": {
     "faq1": {
-      "question": "How is delivery of products to pick-up points organized?",
-      "answer": "Delivery of products to Eco-point pick-up points occurs in the morning on the agreed day, when farmers bring products packed in thermoboxes. Eco-point accepts thermoboxes and checks the integrity of the packaging. Products do not require additional storage conditions."
+      "question": "Як організовано доставку продуктів до пунктів видачі?",
+      "answer": "Доставка продуктів до пунктів видачі Eco-point здійснюється вранці у погоджений день, коли фермери привозять товари, упаковані в термобокси. Eco-point приймає термобокси та перевіряє цілісність упаковки. Продукти не потребують додаткових умов зберігання."
     },
     "faq2": {
-      "question": "How often are products delivered and what are the storage conditions?",
-      "answer": "The delivery schedule is coordinated with eco-point, products are delivered in thermoboxes, where they are stored for up to 24 hours, which ensures their freshness and quality until they are delivered to customers."
+      "question": "Як часто доставляються продукти та які умови зберігання?",
+      "answer": "Графік доставки узгоджується з Eco-point. Продукти доставляються у термобоксах, де можуть зберігатися до 24 годин, що гарантує їхню свіжість та якість до моменту видачі клієнтам."
     },
     "faq3": {
-      "question": "What to do in case of problems with delivery or product quality?",
-      "answer": "If the farmer does not fulfill the delivery conditions or the product does not meet the quality requirements, the buyer is refunded the full price of the food futures contract."
+      "question": "Що робити у разі проблем з доставкою або якістю продуктів?",
+      "answer": "Якщо фермер не виконує умови доставки або продукт не відповідає вимогам якості, покупцеві повертається повна вартість продовольчого ф’ючерсного контракту."
     }
   },
   "advantages": {
-    "title": "advantages",
+    "title": "переваги",
     "card1": {
-      "subtitle": "The price is two times \nlower than analogues",
-      "text": "We keep the price low (at cost level) since we have 11 more products in our ecosystem to increase business profitability, where we make money"
+      "subtitle": "Ціна вдвічі нижча за аналоги",
+      "text": "Ми утримуємо низьку ціну (на рівні собівартості), адже маємо ще 11 продуктів у нашій екосистемі, які підвищують прибутковість бізнесу, і саме там ми заробляємо."
     },
     "card2": {
-      "subtitle": "Specialization \nexclusively in retail",
-      "text": "We have accumulated many years of experience, which is constantly updated and supplemented with the best new strategies, scenarios, visuals \nand other creatives."
+      "subtitle": "Спеціалізація виключно у роздрібній торгівлі",
+      "text": "Ми накопичили багаторічний досвід, який постійно оновлюється та доповнюється найкращими новими стратегіями, сценаріями, візуальними рішеннями та іншими креативами."
     },
     "card3": {
-      "subtitle": "Team work",
-      "text": "Each client has 3-4 specialists plus a uniquely trained AI plus our weekly team meetings where we discuss the best solutions, results obtained and insights from the grocery retail market"
+      "subtitle": "Командна робота",
+      "text": "Кожен клієнт має 3–4 фахівців, а також спеціально навчений штучний інтелект і наші щотижневі командні зустрічі, де ми обговорюємо найкращі рішення, отримані результати та аналітику ринку роздрібної торгівлі."
     }
   },
   "news": {
-    "title": "NEWS"
+    "title": "НОВИНИ"
   },
   "products": {
-    "title": "Unco products"
+    "title": "Продукти Unco"
   },
   "contact": {
-    "title": "contact us",
-    "placeholderStore": "Your Store Name*",
-    "placeholderAddress": "Address*",
-    "placeholderEmail": "Email*",
-    "placeholderContact": "How to Contact You*",
-    "agreeText": "I have read and agreed to the",
-    "agreeSpan": "Privacy Policy",
-    "btnText": "Increase Store Profit"
+    "title": "Зв’яжіться з нами",
+    "placeholderStore": "Назва вашого магазину*",
+    "placeholderAddress": "Адреса*",
+    "placeholderEmail": "Електронна пошта*",
+    "placeholderContact": "Як з вами зв’язатися?*",
+    "agreeText": "Я прочитав(-ла) і погоджуюся з",
+    "agreeSpan": "Політикою конфіденційності",
+    "btnText": "Збільшити прибуток магазину"
   },
-
   "footer": {
-    "subtitle": "Contact us:"
+    "subtitle": "Зв’яжіться з нами:"
   }
 }
