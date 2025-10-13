@@ -8,8 +8,10 @@ import SlideCard from './SlideCard/SlideCard';
 import Title from '../Title/Title';
 import styles from './toolsSlide.module.scss';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const ToolsSlide: React.FC = () => {
+  const t = useTranslations('tools');
   const [tools, setTools] = useState<ToolsRecords[]>([]);
   const { canScrollLeft, canScrollRight, scrollLeft, scrollRight, scrollContainerRef } =
     useScrolling(300);
@@ -28,8 +30,8 @@ const ToolsSlide: React.FC = () => {
   }, []);
 
   return (
-    <div className={styles.toolsSlide}>
-      <Title title={'Our tools generate additional income'} />
+    <section className={styles.toolsSlide}>
+      <Title title={t('title')} />
       <div
         className={styles.slider}
         ref={scrollContainerRef}
@@ -40,12 +42,6 @@ const ToolsSlide: React.FC = () => {
           <SlideCard key={index} img={tools.img} title={tools.title} text={tools.text} />
         ))}
       </div>
-
-      {/* {toolsSlideItems.map((item, index) => (
-          <SlideCard key={item.id ?? index} {...item} />
-        ))}
-      </div> */}
-
       <div className={styles.arrows}>
         <button
           onClick={scrollLeft}
@@ -64,7 +60,7 @@ const ToolsSlide: React.FC = () => {
           <Image src='/images/arrow-right.png' alt='slider arrow right' width={48} height={48} />
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

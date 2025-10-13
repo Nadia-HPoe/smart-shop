@@ -5,8 +5,10 @@ import styles from './products.module.scss';
 import { productsItems } from '@/constants/GetProductsItems';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const Products = () => {
+  const t = useTranslations('products');
   const [currentGroup, setCurrentGroup] = useState(0);
   const [isTablet, setIsTablet] = useState(false);
   const SLIDES_PER_VIEW = 6;
@@ -49,7 +51,7 @@ const Products = () => {
 
   return (
     <section id='products' className={styles.products}>
-      <Title title='Unco products' />
+      <Title title={t('title')} />
       <div ref={listRef} className={styles.blocks}>
         {visibleProducts.map((product) => (
           <div key={product.id} className={`${styles.block} ${product.wide ? styles.wide : ''}`}>

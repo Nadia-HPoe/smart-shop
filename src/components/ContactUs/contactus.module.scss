@@ -4,12 +4,15 @@
   font-family: var.$raleway;
   color: var.$black;
 }
+
 .image {
   margin-top: 40px;
 }
+
 .image_mobile {
   display: none;
 }
+
 .form {
   display: flex;
   flex-direction: column;
@@ -25,15 +28,20 @@
   justify-content: center;
   margin-top: 40px;
 }
+
 .inputGroup {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  height: 101px;
+
   label {
     font-size: 16px;
     margin-bottom: 8px;
     color: #222;
     font-weight: 500;
   }
+
   input[type='text'],
   input[type='email'] {
     border: 2px solid var.$main-green;
@@ -57,25 +65,30 @@
   font-size: 16px;
   margin: 10px 0 0 20px;
 }
+
 .checkbox_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .checkboxRow {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 16px;
   color: #222;
+
   a {
     color: var.$main-green;
     text-decoration: underline;
+
     &:hover {
       color: var.$b-green;
     }
   }
 }
+
 .checkboxRow input[type='checkbox'] {
   accent-color: #22c55e;
   appearance: none;
@@ -114,6 +127,7 @@
   border-radius: 120px;
   padding: 20px 0;
   cursor: pointer;
+
   &:hover {
     transition: all 0.8s ease;
     background: var.$main-green;
@@ -125,16 +139,21 @@
     gap: 16px;
     align-items: center;
   }
+
   .image {
     max-width: 1440px;
     height: auto;
   }
+
   .submitBtn {
     width: 1160px;
     height: 120px;
     font-size: 36px;
   }
+
   .inputGroup {
+
+
     input[type='text'],
     input[type='email'] {
       width: 276px;
@@ -148,24 +167,31 @@
     margin-top: 24px;
     gap: 20px;
   }
+
   .inputsRow {
     gap: 12px;
   }
+
   .submitBtn {
     width: 900px;
     height: 100px;
     font-size: 30px;
   }
+
   .inputGroup {
+    height: 89px;
+
     input[type='text'],
     input[type='email'] {
       width: 214px;
       height: 40px;
     }
   }
+
   .image {
     max-width: 1100px;
   }
+
   .checkboxRow {
     font-size: 14px;
   }
@@ -176,6 +202,7 @@
     margin-top: 16px;
     gap: 14px;
   }
+
   .inputsRow {
     gap: 16px;
     display: flex;
@@ -183,7 +210,9 @@
     align-items: center;
     width: 100%;
   }
+
   .inputGroup {
+
     input[type='text'],
     input[type='email'] {
       width: 308px;
@@ -200,6 +229,7 @@
     width: 644px;
     height: 72px;
   }
+
   .image {
     max-width: 744px;
   }
@@ -211,6 +241,7 @@
     margin-top: 20px;
     gap: 24px;
   }
+
   .inputsRow {
     gap: 16px;
     display: flex;
@@ -218,6 +249,7 @@
     align-items: center;
     width: 100%;
   }
+
   .inputGroup {
     label {
       font-size: 16px;
@@ -230,26 +262,31 @@
       height: 48px;
     }
   }
+
   .checkboxRow {
     font-size: 16px;
     gap: 8px;
     margin-top: 8px;
   }
+
   .submitBtn {
     width: 350px;
     height: 52px;
     font-size: 16px;
   }
+
   .image {
     display: none;
   }
+
   .image_mobile {
     display: block;
     width: 390px;
   }
 }
+
 @media (max-width: 389px) {
-    .image_mobile {
+  .image_mobile {
     height: auto;
     width: 350px;
   }

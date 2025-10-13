@@ -1,36 +1,30 @@
-// export type Tariff = {
-//   id: number;
-//   left: string;
-//   right: string;
-// };
-
 export const tariffs = [
   {
     id: 1,
-    left: 'Individual on-line shop',
+    left: 'row1.left',
     right:
-      'A grocery store on-line shop, perfectly optimized to grow profit and sales. No lock-in. There are options for individualization, management etc. for an additional fee.',
+      'row1.right',
   },
   {
     id: 2,
-    left: 'UNCO SMM',
+    left: 'row2.left',
     right:
-      'Special, tailored to your store: increasing the average customer`s check and attract more solvent customers.',
+      'row2.right',
   },
   {
     id: 3,
-    left: '10+ tools for your growth',
+    left: 'row3.left',
     left_star: '*',
-    right: 'New customers through convenience and freshness',
+    right: 'row3.right',
   },
-  { id: 4, left: '', right: 'Additional income from UNCO services', right_star: '*' },
+  { id: 4, left: '', right: 'row4.right', right_star: '*' },
 
-  { id: 5, left: '', right: 'Reduced costs of personnel, equipment and inventory management' },
-  { id: 6, left: '', right: 'Growing reputation and competitiveness' },
+  { id: 5, left: '', right: 'row5.right' },
+  { id: 6, left: '', right: 'row6.right' },
   {
     id: 7,
-    left: 'Free Contract: cancel anytime',
-    right: 'No lock-in. No cancellation fees.',
+    left: 'row7.left',
+    right: 'row7.right',
   },
-  { id: 8, left: 'Support', right: 'Personal massager available all day' },
+  { id: 8, left: 'row8.left', right: 'row8.right' },
 ];

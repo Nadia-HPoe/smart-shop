@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   .headerLogo {
     margin-bottom: 20px;
   }
@@ -25,7 +26,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     padding: 0;
     margin: 0;
@@ -38,6 +39,7 @@
     a {
       color: var.$black;
       text-decoration: none;
+
       &:hover {
         text-decoration: 3px underline var.$main-green;
         text-underline-offset: 4px;
@@ -49,6 +51,7 @@
           text-decoration-color: transparent;
           text-decoration-thickness: 0;
         }
+
         to {
           text-decoration-color: var.$main-green;
           text-decoration-thickness: 3px;
@@ -61,6 +64,7 @@
     display: block;
     cursor: pointer;
   }
+
   .languages_icon_mobile {
     display: none;
   }
@@ -97,6 +101,7 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+
     .headerBtn {
       font-family: var.$raleway;
       font-size: 18px;
@@ -110,6 +115,8 @@
       transition: background-color 0.3s ease;
       text-transform: uppercase;
       text-decoration: none;
+      text-align: center;
+
       &:hover {
         background-color: var.$hover-pink;
       }
@@ -131,17 +138,21 @@
 @media (max-width: 1439px) {
   .header {
     padding: 30px 60px 40px;
+
     .headerContainer {
       gap: 80px;
     }
+
     .links_desktop {
       gap: 30px;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 100%;
+
       a:hover {
         text-underline-offset: 6px;
       }
     }
+
     .headerActions .headerBtn {
       font-weight: 600;
       font-size: 16px;
@@ -153,9 +164,11 @@
 @media (max-width: 1099px) {
   .header {
     padding: 30px 40px 60px;
+
     .headerContainer {
       gap: 60px;
     }
+
     .burger_mobile {
       display: block;
       cursor: pointer;
@@ -164,15 +177,19 @@
       margin: 0;
       background-color: transparent;
     }
+
     .languages_icon_desktop {
       display: none;
     }
+
     .languages_icon_mobile {
       display: block;
     }
+
     .links_desktop {
       display: none;
     }
+
     .overlay {
       position: fixed;
       top: 0;
@@ -193,7 +210,8 @@
         transition: opacity 0.5s ease-in-out;
       }
     }
-    .links_mobile{
+
+    .links_mobile {
       position: fixed;
       right: 0;
       top: 0;
@@ -213,6 +231,7 @@
       }
 
     }
+
     .links_close {
       position: absolute;
       top: 40px;
@@ -220,6 +239,7 @@
       border: none;
       background: none;
     }
+
     .links_mobile_list {
       display: flex;
       align-items: center;
@@ -231,32 +251,33 @@
       list-style: none;
       flex-direction: column;
 
-    li {
-      list-style: none;
+      li {
+        list-style: none;
 
-      &:hover {
-        text-decoration: 3px underline var.$main-green;
-        text-underline-offset: 4px;
-        animation: underlineGrow 0.3s ease forwards;
+        &:hover {
+          text-decoration: 3px underline var.$main-green;
+          text-underline-offset: 4px;
+          animation: underlineGrow 0.3s ease forwards;
+        }
+
+        @keyframes underlineGrow {
+          from {
+            text-decoration-color: transparent;
+            text-decoration-thickness: 0;
+          }
+
+          to {
+            text-decoration-color: var.$main-green;
+            text-decoration-thickness: 3px;
+          }
+        }
+
       }
 
-      @keyframes underlineGrow {
-        from {
-          text-decoration-color: transparent;
-          text-decoration-thickness: 0;
-        }
-        to {
-          text-decoration-color: var.$main-green;
-          text-decoration-thickness: 3px;
-        }
+      a {
+        color: var.$black;
+        text-decoration: none;
       }
-
-    }
-
-    a {
-      color: var.$black;
-      text-decoration: none;
-    }
     }
 
     .headerActions .headerBtn {
@@ -269,30 +290,37 @@
   .header {
     padding: 20px 20px 40px;
     gap: 30px;
+
     .headerLogo {
       margin-bottom: 18px;
       width: 100px;
       height: 46px;
     }
+
     .headerActions {
       gap: 16px;
+
       .headerBtn {
         font-size: 10px;
         padding: 10px 21.5px;
         width: 160px;
       }
     }
+
     .button_wrapper_mobile {
       position: fixed;
       top: 40px;
       left: 46px;
     }
-     .links_mobile {
+
+    .links_mobile {
       width: 100%;
     }
+
     .links_mobile_list {
       font-size: 24px;
     }
+
     .language_list_wrapper {
       top: 50px;
       right: -100px;
@@ -304,6 +332,7 @@
   .header {
     padding: 20px 10px 40px;
     gap: 12px;
+
     .headerActions {
       gap: 12px;
     }

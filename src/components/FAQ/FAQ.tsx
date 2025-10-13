@@ -1,8 +1,10 @@
 import Title from '../Title/Title';
 import styles from './faq.module.scss';
 import { faqItems } from '@/constants/GetFAQItems';
+import { useTranslations } from 'next-intl';
 
 function FAQ() {
+  const t = useTranslations('faq');
   return (
     <section className={styles.faq} id='faq'>
       <Title title='FAQ' />
@@ -12,12 +14,12 @@ function FAQ() {
           return (
             <div key={number} className={styles.question}>
               <div className={styles.text_and_button}>
-                <p className={`${styles.text} ${styles.question_text}`}>{`${question}`}</p>
+                <p className={`${styles.text} ${styles.question_text}`}>{`${question ? t(question) : null}`}</p>
                 <label htmlFor={`${number}check`} className={styles.button}>
                   <input type='checkbox' id={`${number}check`} />
                 </label>
               </div>
-              <p className={`${styles.text} ${styles.answer_text}`}>{answer}</p>
+              <p className={`${styles.text} ${styles.answer_text}`}>{`${answer ? t(answer) : null}`}</p>
             </div>
           );
         })}

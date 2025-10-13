@@ -1,16 +1,18 @@
 import Image from 'next/image';
 import styles from './profit.module.scss';
 import Title from '../Title/Title';
+import { useTranslations } from 'next-intl';
 
 function Profit() {
+  const t = useTranslations('profit');
   return (
     <section>
       <Title
         title={
           <>
-            more profit <br />
-            more sales <br />
-            more repeat orders
+            {t('title1')} <br />
+            {t('title2')} <br />
+            {t('title3')}
           </>
         }
       />
@@ -23,7 +25,7 @@ function Profit() {
             height={268}
             className={styles.image}
           />
-          <p className={styles.subtitle}>increase in profit</p>
+          <p className={styles.subtitle}>{t('text1')}</p>
         </div>
         <Image
           src='/images/profit/seekbar.png'
@@ -47,7 +49,7 @@ function Profit() {
             height={268}
             className={styles.image}
           />
-          <p className={styles.subtitle}>increase in trade turnover</p>
+          <p className={styles.subtitle}>{t('text2')}</p>
         </div>
       </div>
     </section>

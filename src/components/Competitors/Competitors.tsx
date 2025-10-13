@@ -6,14 +6,16 @@ import { columns, products, Product } from '@/constants/GetCompetitorsData';
 import { getCellStyle } from '@/functions/formatCellCompetitors';
 import { useScrolling } from '@/hooks/useScrolling';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 function Competitors() {
+  const t = useTranslations('competitors');
   const { canScrollLeft, canScrollRight, scrollLeft, scrollRight, scrollContainerRef } =
     useScrolling(300);
 
   return (
     <section className={styles.competitors} id='competitors'>
-      <Title title='competitors' />
+      <Title title={t('title')} />
       <div className={styles.container} ref={scrollContainerRef}>
         <table className={styles.table}>
           <tbody>

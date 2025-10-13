@@ -6,7 +6,7 @@ import styles from './footer.module.scss';
 import { useTranslations } from 'next-intl';
 
 function Footer() {
-const t = useTranslations("header")
+  const t = useTranslations("header")
   return (
     <footer className={styles.footer}>
       <div className={styles.navigation}>
@@ -15,7 +15,7 @@ const t = useTranslations("header")
           {navigationItems.map((item) => (
             <li key={item.id}>
               <Link href={item.href} className={styles.footer_nav_item}>
-               {t(item.text)}
+                {t(item.text)}
               </Link>
             </li>
           ))}
@@ -23,7 +23,7 @@ const t = useTranslations("header")
       </div>
       <div className={styles.contacts}>
         <div className={styles.socials}>
-          <p className={styles.social_title}>Contact us:</p>
+          <p className={styles.social_title}>{t('subtitle')}</p>
           <div className={styles.social_items}>
             {socialData.map((item, index) => (
               <div key={index}>

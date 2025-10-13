@@ -7,6 +7,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import Title from '../Title/Title';
 import styles from './contactus.module.scss';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 type FormData = {
   store: string;
@@ -17,6 +18,7 @@ type FormData = {
 };
 
 const ContactUs = () => {
+  const t = useTranslations('contact');
   const {
     register,
     handleSubmit,
@@ -60,7 +62,7 @@ const ContactUs = () => {
         data.email,
         data.contact,
         recaptchaToken
-      )
+      );
 
       if (result && result.status >= 200 && result.status < 300) {
         setSubmitSuccess('Your feedback was successfully submitted. Thank you!');
@@ -78,7 +80,7 @@ const ContactUs = () => {
 
   return (
     <section className={styles.contactus} id='contactus'>
-      <Title title='Contact Us' />
+      <Title title={t('title')} />
       <Image
         className={styles.image}
         src='/images/contactUs/bannerUnco.svg'
@@ -96,7 +98,7 @@ const ContactUs = () => {
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className={styles.inputsRow}>
           <div className={styles.inputGroup}>
-            <label htmlFor='store'>Your Store Name*</label>
+            <label htmlFor='store'>{t('placeholderStore')}</label>
             <input
               id='store'
               type='text'
@@ -112,7 +114,7 @@ const ContactUs = () => {
           </div>
 
           <div className={styles.inputGroup}>
-            <label htmlFor='address'>Address*</label>
+            <label htmlFor='address'>{t('placeholderAddress')}</label>
             <input
               id='address'
               type='text'
@@ -127,7 +129,7 @@ const ContactUs = () => {
             )}
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor='email'>Email*</label>
+            <label htmlFor='email'>{t('placeholderEmail')}</label>
             <input
               id='email'
               type='email'
@@ -148,7 +150,7 @@ const ContactUs = () => {
             )}
           </div>
           <div className={styles.inputGroup}>
-            <label htmlFor='contact'>How to Contact You*</label>
+            <label htmlFor='contact'>{t('placeholderContact')}</label>
             <input
               id='contact'
               type='text'
@@ -173,7 +175,7 @@ const ContactUs = () => {
               aria-describedby='agree-error'
             />
             <label htmlFor='agree' className={styles.checkboxLabel}>
-              I have read and agree to the{' '}
+              {t('agreeText')}{' '}
               <a
                 href='/privacy-policy'
                 target='_blank'
@@ -181,7 +183,7 @@ const ContactUs = () => {
                 tabIndex={0}
                 className={styles.privacyPolicyLink}
               >
-                Privacy Policy
+                {t('agreeSpan')}
               </a>
             </label>
           </div>
@@ -217,7 +219,7 @@ const ContactUs = () => {
           className={styles.submitBtn}
           aria-busy={isSubmitting || isLoading}
         >
-          {isSubmitting ? 'Submitting...' : 'Increase Store Profit'}
+          {isSubmitting ? 'Submitting...' : t('btnText')}
         </button>
       </form>
     </section>

@@ -7,8 +7,10 @@ import NewsCard from './NewsCard/NewsCard';
 import Image from 'next/image';
 import { loadNews } from '@/app/[locale]/actions';
 import { NewsRecords, transformNews } from '@/functions/transformNews';
+import { useTranslations } from 'next-intl';
 
 const News: React.FC = () => {
+  const t = useTranslations('news');
   const [news, setNews] = useState<NewsRecords[]>([]);
   const sliderRef = useRef<HTMLDivElement>(null);
 
@@ -38,7 +40,7 @@ const News: React.FC = () => {
 
   return (
     <section id='news'>
-      <Title title='news' />
+      <Title title={t('title')} />
       <div className={styles.slider}>
         <div className={styles.cards} ref={sliderRef}>
           {news.map((news, index) => (
