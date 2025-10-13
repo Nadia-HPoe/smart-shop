@@ -1,4 +1,5 @@
 @use '../../styles/_var' as var;
+
 .banner {
   font-family: var.$raleway;
   display: flex;
@@ -7,17 +8,21 @@
   justify-content: center;
   margin-top: 120px;
 }
+
 .title_wrapper {
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
+
 .title {
   font-size: 80px;
   font-weight: 700;
   color: #51611d;
   line-height: 100%;
+  text-align: center;
 }
+
 .form {
   width: 1322px;
   height: 72px;
@@ -26,10 +31,12 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+
   &:focus-within {
     border-color: var.$red;
   }
 }
+
 .input_wrapper {
   display: flex;
   align-items: center;
@@ -37,20 +44,24 @@
   width: 100%;
   gap: 10px;
 }
+
 .search_icon {
   align-items: center;
 }
+
 .input {
   border: none;
-  width: 789px;
-  font-size: 26px;
+  width: 850px;
+  font-size: 22px;
   font-weight: 400;
   color: #9a9a9a;
   outline: none;
+
   &::placeholder {
     color: #9a9a9a;
   }
 }
+
 .input:focus::placeholder {
   color: transparent;
 }
@@ -70,24 +81,29 @@
   font-family: var.$raleway;
   color: var.$black;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   transition: all 0.8s ease;
 }
+
 .button:hover {
   transition: all 0.8s ease;
   background: var.$main-green;
 }
+
 .banner_blocks {
   display: flex;
   width: 1640px;
   gap: 270px;
   margin-top: 500px;
 }
+
 .block_left_side {
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
 }
+
 .text_left_side {
   width: 370px;
   height: 550px;
@@ -102,6 +118,7 @@
   gap: 16px;
   align-items: center;
   justify-content: center;
+
   .subtitile,
   .text {
     max-width: 225px;
@@ -109,17 +126,21 @@
     font-size: 32px;
     text-align: center;
   }
+
   .subtitile {
     font-weight: 700;
   }
+
   .text {
     font-weight: 400;
   }
 }
+
 .block_rigth_side {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .text_right_side_top {
   color: #ffffff;
   background-color: #214b33;
@@ -145,6 +166,7 @@
     font-weight: 400;
   }
 }
+
 .text_right_side_bottom {
   color: #ffffff;
   background-color: #567d26;
@@ -178,20 +200,24 @@
     gap: 240px;
     margin-top: 300px;
   }
+
   .title {
     font-size: 70px;
   }
+
   .form {
     width: 1000px;
     height: 64px;
   }
+
   .search_icon {
     width: 30px;
     height: 30px;
   }
+
   .input {
     font-size: 16px;
-    width: 500px;
+    width: 650px;
   }
 
   .image_left_side {
@@ -199,6 +225,7 @@
     height: 400px;
     object-fit: cover;
   }
+
   .text_left_side {
     width: 300px;
     height: 400px;
@@ -212,24 +239,30 @@
       font-size: 20px;
     }
   }
+
   .image_right_side_top {
     width: 300px;
     height: 200px;
     object-fit: cover;
   }
+
   .text_right_side_top {
+
     .subtitile,
     .text {
       max-width: 180px;
       font-size: 15px;
     }
   }
+
   .image_right_side_bottom {
     width: 300px;
     height: 200px;
     object-fit: cover;
   }
+
   .text_right_side_bottom {
+
     .subtitile,
     .text {
       max-width: 180px;
@@ -242,34 +275,41 @@
   .banner {
     margin-top: 60px;
   }
+
   .title_wrapper {
     gap: 50px;
   }
+
   .title {
     font-size: 45px;
   }
+
   .form {
     width: 650px;
     height: 50px;
   }
 
   .input {
-    font-size: 12px;
+    font-size: 10px;
     width: 379px;
   }
+
   .button {
     font-size: 14px;
     width: 250px;
   }
+
   .banner_blocks {
     width: 970px;
     gap: 70px;
     margin-top: 200px;
   }
+
   .image_left_side {
     width: 350px;
     height: 350px;
   }
+
   .text_left_side {
     width: 250px;
     height: 350px;
@@ -283,10 +323,12 @@
       font-size: 18px;
     }
   }
+
   .image_right_side_top {
     width: 220px;
     height: 200px;
   }
+
   .text_right_side_top {
 
     .subtitile,
@@ -295,11 +337,14 @@
       font-size: 13px;
     }
   }
+
   .image_right_side_bottom {
     width: 200px;
     height: 150px;
   }
+
   .text_right_side_bottom {
+
     .subtitile,
     .text {
       max-width: 165px;
@@ -312,31 +357,37 @@
   .title {
     font-size: 34px;
   }
+
   .form {
     width: 593px;
     height: 44px;
   }
+
   .search_icon {
     width: 24px;
     height: 24px;
   }
+
   .input {
-    font-size: 12px;
-    width: 379px;
+    font-size: 9px;
   }
+
   .button {
-    font-size: 12px;
+    font-size: 10px;
     width: 164px;
   }
+
   .banner_blocks {
     width: 644px;
     gap: 100px;
     margin-top: 200px;
   }
+
   .image_left_side {
     width: 216px;
     height: 216px;
   }
+
   .text_left_side {
     width: 146px;
     height: 216px;
@@ -350,22 +401,28 @@
       font-size: 13px;
     }
   }
+
   .image_right_side_top {
     width: 161px;
     height: 124px;
   }
+
   .text_right_side_top {
+
     .subtitile,
     .text {
       max-width: 125px;
       font-size: 10px;
     }
   }
+
   .image_right_side_bottom {
     width: 161px;
     height: 93px;
   }
+
   .text_right_side_bottom {
+
     .subtitile,
     .text {
       max-width: 161px;
@@ -376,11 +433,15 @@
 
 
 @media (max-width: 743px) {
+  .banner {
+    margin-top: 30px;
+  }
+
   .title {
-    font-size: 32px;
-    width: 328px;
+    font-size: 24px;
     text-align: center;
   }
+
   .form {
     flex-direction: column;
     align-items: center;
@@ -389,25 +450,30 @@
     height: 36px;
     padding-top: 6px;
   }
+
   .input {
-    font-size: 10px;
+    font-size: 7px;
     width: 288px;
   }
+
   .button {
     font-size: 12px;
     width: 200px;
     height: 40px;
     padding: 13px;
   }
+
   .banner_blocks {
     width: 390px;
     gap: 0;
     margin-top: 200px;
   }
+
   .image_left_side {
     width: 119px;
     height: 144px;
   }
+
   .text_left_side {
     width: 77px;
     height: 144px;
@@ -418,28 +484,34 @@
 
     .subtitile,
     .text {
-      max-width: 61px;
+      max-width: 65px;
       font-size: 10px;
     }
   }
+
   .image_right_side_top {
     width: 120px;
-    height: 74px;
+    height: 57px;
   }
+
   .image_right_side_bottom {
     width: 120px;
-    height: 70px;
+    height: 87px;
   }
+
   .text_right_side_top {
     gap: 4px;
+
     .subtitile,
     .text {
       max-width: 114px;
       font-size: 10px;
     }
   }
+
   .text_right_side_bottom {
     gap: 4px;
+
     .subtitile,
     .text {
       max-width: 98px;
@@ -452,27 +524,33 @@
   .title {
     font-size: 26px;
   }
-    .banner_blocks {
+
+  .banner_blocks {
     width: 360px;
     gap: 0;
     margin-top: 150px;
   }
 
   .text_left_side {
+
     .subtitile,
     .text {
       font-size: 9px;
       line-height: 10px;
     }
   }
+
   .text_right_side_top {
+
     .subtitile,
     .text {
       font-size: 9px;
       line-height: 10px;
     }
   }
+
   .text_right_side_bottom {
+
     .subtitile,
     .text {
       font-size: 9px;

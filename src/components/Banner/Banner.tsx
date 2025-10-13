@@ -6,12 +6,14 @@ import imageRightSideBottom from '../../../public/images/banner/banner_right_sid
 import Image from 'next/image';
 import styles from './banner.module.scss';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const Banner = () => {
+  const t = useTranslations('banner1');
   return (
     <section className={styles.banner}>
       <div className={styles.title_wrapper}>
-        <h1 className={styles.title}>Why is your shop losing sales and profit?</h1>
+        <h1 className={styles.title}>{t('subtitle')}</h1>
         <form className={styles.form}>
           <div className={styles.input_wrapper}>
             <Image
@@ -21,14 +23,10 @@ const Banner = () => {
               width={32}
               height={32}
             />
-            <input
-              className={styles.input}
-              type='text'
-              placeholder={`Check how your store compares to neighbouring grocery stores`}
-            />
+            <input className={styles.input} type='text' placeholder={t('input')} />
           </div>
-          <Link href='#competitors' className={styles.button}>
-            GET MY REPORT
+          <Link href='#contactus' className={styles.button}>
+            {t('button')}
           </Link>
         </form>
       </div>
@@ -42,8 +40,8 @@ const Banner = () => {
             alt='employee'
           />
           <div className={styles.text_left_side}>
-            <span className={styles.subtitile}>Rising costs</span>
-            <span className={styles.text}>Electricity, rent, staff, etc.</span>
+            <span className={styles.subtitile}>{t('card_1.subtitle')}</span>
+            <span className={styles.text}>{t('card_1.text')}</span>
           </div>
         </div>
         <div className={styles.block_rigth_side}>
@@ -55,14 +53,12 @@ const Banner = () => {
             alt='grandmothers'
           />
           <div className={styles.text_right_side_bottom}>
-            <span className={styles.subtitile}>Online growth</span>
-            <span className={styles.text}>Product sales and delivery services</span>
+            <span className={styles.subtitile}>{t('card_3.subtitle')}</span>
+            <span className={styles.text}>{t('card_3.text')}</span>
           </div>
           <div className={styles.text_right_side_top}>
-            <span className={styles.subtitile}>
-              Products become more expensive faster than customers incomes
-            </span>
-            <span className={styles.text}>Buyers are forced to save more and more.</span>
+            <span className={styles.subtitile}>{t('card_2.subtitle')}</span>
+            <span className={styles.text}>{t('card_2.text')}.</span>
           </div>
           <Image
             src={imageRightSideBottom}
