@@ -7,7 +7,8 @@
       "link_4": "Nuestra historia",
       "link_5": "Productos Unco"
     },
-    "button": "Solicitar descuento"
+    "button": "Solicitar descuento",
+    "subtitle": "Contáctenos:"
   },
   "banner1": {
     "subtitle": "¿Por qué su tienda está perdiendo ventas y beneficios?",
@@ -73,7 +74,7 @@
       "left": "Soporte",
       "right": "Asesor personal disponible todo el día"
     },
-    "text": "*La funcionalidad básica está incluida en el precio; las opciones adicionales y premium pueden tener un coste extra",
+    "text": "La funcionalidad básica está incluida en el precio; las opciones adicionales y premium pueden tener un coste extra",
     "button": "Solicitar descuento"
   },
   "competitors": {
@@ -131,8 +132,5 @@
     "agreeText": "He leído y acepto la",
     "agreeSpan": "Política de privacidad",
     "btnText": "Aumentar la rentabilidad de la tienda"
-  },
-  "footer": {
-    "subtitle": "Contáctenos:"
   }
 }

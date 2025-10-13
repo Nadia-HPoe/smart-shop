@@ -7,7 +7,8 @@
       "link_4": "La nostra storia",
       "link_5": "Prodotti Unco"
     },
-    "button": "Richiedi uno sconto"
+    "button": "Richiedi uno sconto",
+    "subtitle": "Contattaci:"
   },
   "banner1": {
     "subtitle": "Perché il suo negozio sta perdendo vendite e profitti?",
@@ -73,7 +74,7 @@
       "left": "Assistenza",
       "right": "Consulente personale disponibile tutto il giorno"
     },
-    "text": "*La funzionalità di base è inclusa nel prezzo, le opzioni aggiuntive e premium possono essere a pagamento",
+    "text": "La funzionalità di base è inclusa nel prezzo, le opzioni aggiuntive e premium possono essere a pagamento",
     "button": "Richiedi uno sconto"
   },
   "competitors": {
@@ -131,8 +132,5 @@
     "agreeText": "Ho letto e accetto la",
     "agreeSpan": "Politica sulla privacy",
     "btnText": "Aumentare il profitto del negozio"
-  },
-  "footer": {
-    "subtitle": "Contattaci:"
   }
 }

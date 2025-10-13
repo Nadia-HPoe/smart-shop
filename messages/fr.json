@@ -7,7 +7,8 @@
       "link_4": "Notre histoire",
       "link_5": "Produits Unco"
     },
-    "button": "Demander une remise"
+    "button": "Demander une remise",
+    "subtitle": "Contactez-nous :"
   },
   "banner1": {
     "subtitle": "Pourquoi votre magasin perd-il des ventes et des bénéfices ?",
@@ -73,7 +74,7 @@
       "left": "Assistance",
       "right": "Gestionnaire personnel disponible toute la journée"
     },
-    "text": "*Les fonctionnalités de base sont incluses dans le prix ; les options supplémentaires et premium peuvent être payantes",
+    "text": "Les fonctionnalités de base sont incluses dans le prix ; les options supplémentaires et premium peuvent être payantes",
     "button": "Demander une remise"
   },
   "competitors": {
@@ -131,8 +132,5 @@
     "agreeText": "J’ai lu et j’accepte la",
     "agreeSpan": "Politique de confidentialité",
     "btnText": "Augmenter les bénéfices du magasin"
-  },
-  "footer": {
-    "subtitle": "Contactez-nous :"
   }
 }

@@ -7,7 +7,8 @@
       "link_4": "Unsere Geschichte",
       "link_5": "Unco-Produkte"
     },
-    "button": "Rabatt anfragen"
+    "button": "Rabatt anfragen",
+    "subtitle": "Kontaktieren Sie uns:"
   },
   "banner1": {
     "subtitle": "Warum verliert Ihr Geschäft Umsatz und Gewinn?",
@@ -73,7 +74,7 @@
       "left": "Support",
       "right": "Persönlicher Betreuer den ganzen Tag verfügbar"
     },
-    "text": "*Grundfunktionen sind im Preis enthalten, zusätzliche und Premium-Optionen können kostenpflichtig sein",
+    "text": "Grundfunktionen sind im Preis enthalten, zusätzliche und Premium-Optionen können kostenpflichtig sein",
     "button": "Rabatt anfragen"
   },
   "competitors": {
@@ -128,10 +129,8 @@
     "placeholderAddress": "Adresse*",
     "placeholderEmail": "E-Mail*",
     "placeholderContact": "Wie können wir Sie kontaktieren?*",
-    "agreeText": "Ich habe die Datenschutzrichtlinie gelesen und stimme ihr zu",
+    "agreeText": "Ich habe die Richtlinie gelesen und stimme ",
+    "agreeSpan": "der Datenschutzerklärung zu",
     "btnText": "Geschäftsgewinn steigern"
-  },
-  "footer": {
-    "subtitle": "Kontaktieren Sie uns:"
   }
 }

@@ -7,7 +7,8 @@
       "link_4": "Our story",
       "link_5": "Unco Products"
     },
-    "button": "Ask for discount"
+    "button": "Ask for discount",
+    "subtitle": "Contact us:"
   },
   "banner1": {
     "subtitle": "Why is your shop losing sales and profit?",
@@ -73,7 +74,7 @@
       "left": "Support",
       "right": "Personal massager available all day"
     },
-    "text": "*Basic functionality is included in the price, additional and premium options may be paid",
+    "text": "Basic functionality is included in the price, additional and premium options may be paid",
     "button": "Ask for discount"
   },
   "competitors": {
@@ -131,8 +132,5 @@
     "agreeText": "I have read and agreed to the",
     "agreeSpan": "Privacy Policy",
     "btnText": "Increase Store Profit"
-  },
-  "footer": {
-    "subtitle": "Contact us:"
   }
 }
